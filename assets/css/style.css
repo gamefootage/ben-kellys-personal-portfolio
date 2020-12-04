@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Dancing+Script&display=swap');
+
+.parallax {
+    background: #363636;
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.home-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 100vh;
+}
+
+.front-img {
+    background: radial-gradient(#1f1e1e,#363636);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.img {
+    background: url(/assets/images/portfolio.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: top;
+    background-size: cover;
+}
+
+.front {
+  transform: translateZ(0);
+}
+.back {
+  transform: translateZ(-1px);
+}
