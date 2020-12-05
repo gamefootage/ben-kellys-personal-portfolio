@@ -152,8 +152,8 @@ body {
 }
 
 .header-bg {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
+    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("./assets/images/portfolio.jpg");
+    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("./assets/images/portfolio.jpg");
     width: 100%;
     height: 115vh;
     background-size: cover;
@@ -236,7 +236,7 @@ body {
 }
 
 .lil-ben {
-    background: url(/assets/images/lil-ben-1.jpg);
+    background: url("./assets/images/lil-ben-1.jpg");
     background-position: right;
     background-size: cover;
     width: 33.333%;
