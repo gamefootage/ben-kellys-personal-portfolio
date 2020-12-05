@@ -251,15 +251,15 @@ body {
 }
 
 .lil-ben:hover {
-    background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url(/assets/images/lil-ben-1.jpg);
-    background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/lil-ben-1.jpg);
+    background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("./assets/images/lil-ben-1.jpg");
+    background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("./assets/images/lil-ben-1.jpg");
     background-position: right;
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .middle-ben {
-    background: url(/assets/images/middle-ben.jpg);
+    background: url("./assets/images/middle-ben.jpg");
     background-position: center;
     background-size: cover;
     width: 33.333%;
@@ -274,15 +274,15 @@ body {
 }
 
 .middle-ben:hover {
-    background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/middle-ben.jpg);
-    background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/middle-ben.jpg);
+    background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("./assets/images/middle-ben.jpg");
+    background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("./assets/images/middle-ben.jpg");
     background-position: right;
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .big-ben {
-    background: url(/assets/images/big-ben.jpeg);
+    background: url("./assets/images/big-ben.jpeg");
     background-position: center;
     background-size: cover;
     width: 33.333%;
@@ -297,8 +297,8 @@ body {
 }
 
 .big-ben:hover {
-    background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/big-ben.jpeg);
-    background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/big-ben.jpeg);
+    background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("./assets/images/big-ben.jpeg");
+    background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("./assets/images/big-ben.jpeg");
     background-position: center;
     background-size: cover;
     transition: all 0.3s ease-in-out;
@@ -320,7 +320,7 @@ body {
 
 .work-header {
     position: relative;
-    background: url(/assets/images/timeline.jpeg);
+    background: url("./assets/images/timeline.jpeg");
     background-size: cover;
     height: 10rem;
     background-attachment: fixed;
