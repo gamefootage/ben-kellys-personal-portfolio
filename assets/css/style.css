@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Bebas+Neue&family=Nunito&family=Open+Sans&family=Lobster&family=Source+Sans+Pro&display=swap');
 
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
-* {
+body {
     margin: 0;
     padding: 0;
 }
 
 .parallax {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+   background: #2c2c2c;
     perspective: 5px;
     height: 100vh;
     overflow-x: hidden;
@@ -23,6 +18,7 @@
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
+  pointer-events: none;
 }
 
 .layer {
@@ -35,14 +31,17 @@
 
 .back {
     transform: translateZ(-1px) scale(1.2);
+    pointer-events: none;
 }
 
 .base {
     transform: translateZ(0px);
+    pointer-events: none;
 }
 
 .front {
     transform: translateZ(1px) scale(0.8);
+    pointer-events: none;
 }
 
 /* -------------------------------------------------------------------Header */
@@ -70,21 +69,83 @@
 
 .nav-link {
     white-space: nowrap;
-    color: white !important;
+    color: rgb(119, 119, 119) !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link.active {
+    filter: brightness(0.7);
+}
+
+.nav-link:hover {
+    filter: brightness(0.8);
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar-toggler {
-    background: rgb(88, 88, 88);
+    background: transparent;
+    color: #2c2c2c;
 }
 
-.collapse {
-    transition: all 0.5s ease-in-out;
+/* Burger animation based on https://codepen.io/erikterwan/pen/EVzeRP */
+
+.navbar-toggler span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.navbar-toggler span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.navbar-toggler span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+.navbar-toggler[aria-expanded="true"] span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0px, 2px);
+    background: #232323;
+}
+
+.navbar-toggler[aria-expanded="true"] span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(-45deg) translate(-7px, -13px);
+}
+
+.navbar-toggler[aria-expanded="true"] span:nth-last-child(2)
+{
+  transform: rotate(45deg) translate(-5px, -10px);
 }
 
 .header-section {
     font-family: 'Julius Sans One';
     color: #fff;
     z-index: 4;
+    /* background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
+    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -94,14 +155,11 @@
     background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
     width: 100%;
-    height: 120%;
+    height: 115vh;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100%;
-    min-height: 100%;
-    z-index: -100;
 }
 
 .header {
@@ -132,38 +190,388 @@
     -moz-animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
     -o-animation-fill-mode: both;
-    animation-delay: 2.2s;
-    -webkit-animation-delay: 2.2s;
-    -moz-animation-delay: 2.2s;
-    -o-animation-delay: 2.2s;
+    animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
     transform: translate(-50%, -50%);
 }
 
 /* -------------------------------------------------------------------About */
 
 .about-section {
-    background-color: white;
+    color: #2c2c2c;
     z-index: 5;
 }
 
 .about-bg {
-    background: -webkit-linear-gradient(rgb(199, 0, 0), red, rgb(199, 0, 0));
+    background: rgb(110, 7, 7);
     position: relative;
     width: 100%;
     height: 10rem;
+    z-index: 6;
 }
 
 .about-header {
     position: absolute;
     top: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 6rem;
     font-weight: bold;
-    background: -webkit-linear-gradient(left, rgb(8, 8, 8), rgb(121, 118, 118));
+    background: -webkit-linear-gradient(left, rgb(8, 8, 8), rgb(34, 34, 34));
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.inner-txt {
+    font-size: 2rem;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    opacity: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.lil-ben {
+    background: url(/assets/images/lil-ben-1.jpg);
+    background-position: right;
+    background-size: cover;
+    width: 33.333%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: auto;
+    display: table;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+.lil-ben:hover {
+    background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url(/assets/images/lil-ben-1.jpg);
+    background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/lil-ben-1.jpg);
+    background-position: right;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-ben {
+    background: url(/assets/images/middle-ben.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 33.333%;
+    height: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    display: table;
+    text-align: center;
+}
+
+.middle-ben:hover {
+    background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/middle-ben.jpg);
+    background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/middle-ben.jpg);
+    background-position: right;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.big-ben {
+    background: url(/assets/images/big-ben.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 33.333%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    pointer-events: auto;
+    display: table;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+.big-ben:hover {
+    background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/big-ben.jpeg);
+    background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url(/assets/images/big-ben.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.outer-img:hover .inner-txt {
+    opacity: 1;
+    transition-delay: 0.3s;
+    transition: all 0.6s ease-in-out;
+}
+
+/* -------------------------------------------------------------------Work Experience */
+
+.work-section {
+    position: relative;
+    z-index: 6;
+    background: #2c2c2c;
+}
+
+.work-header {
+    position: relative;
+    background: url(/assets/images/timeline.jpeg);
+    background-size: cover;
+    height: 10rem;
+    background-attachment: fixed;
+    font-size: 9rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.timeline-item {
+    /* padding: 2em 2em 0em 2em; */
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+    transition: all 0.6s ease-in-out;
+    transition-delay: 0.3s;
+    background-color: #001318;
+}
+
+.timeline-info {
+    transition: all 0.6s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.timeline-item:hover .timeline-info {
+    transition: all 0.6s ease-in-out;
+    padding-top: 2em;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-info:before {
+    content: attr(data-dates);
+    font-family: Exo, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0;
+    margin: 0 0 0 -2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.timeline-item:hover .timeline-info::before {
+    left: 2em;
+    transition-delay: 1s;
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    margin-left: 0;
+    opacity: 1;
+    background: transparent;
+}
+
+.timeline-info:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -0.4em;
+    border-radius: 12px;
+    content: '';
+    background-color: #fafafa;
+}
+
+.timeline-item:hover .work-hidden {
+    transition-delay: 0.5s;
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 2em;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    padding-left: 2em;
+}
+
+.timeline-item .work-hidden {
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: -22rem;
+    padding: 0;
+    pointer-events: none;
+}
+
+.timeline-info {
+    padding: 0 0 2em 2em;
+    background: #00181e;
+}
+
+.work-hidden img {
+    object-fit: cover;
+    height: 20rem;
+    width: 55%;
+    pointer-events: none;
+}
+
+.timeline-2 .work-hidden img {
+    object-position: top;
+}
+
+.work-hidden ul {
+    width: auto;
+    max-width: 45%;
+    height: 20rem;
+    font-size: 1.5rem;
+    font-family: Oswald, sans-serif;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.timeline-4 {
+    padding-bottom: 1rem !important;
+}
+
+.timeline-4:hover {
+    padding-bottom: 0 !important;
+}
+
+/* -------------------------------------------------------------------Contact Footer */
+
+.footer-contact {
+    font-size: 4rem;
+    height: 50rem;
+}
+
+.footer-social {
+    background-color: rgb(218, 38, 98);
+    height: 100%;
+}
+
+.social {
+    display: block;
+    margin: 2rem 0;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    white-space: nowrap;
+}
+.social i:not(.fa-github):not(.social-cv) {
+    position: relative;
+    left: 22%;
+}
+
+.social-gh a i{
+    font-size: 6rem;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.social a {
+    display: inline;
+    height: 2rem;
+}
+
+.social:not(.social-fb) {
+    text-align: center;
+}
+
+.social-fb i {
+    left: 20%;
+}
+
+.fa-github {
+    display: inline-block;
+    font-size: 4rem;
+    border-radius: 50%;
+}
+
+.fa-github:hover {
+    filter: brightness(0.5);
+}
+
+.social:hover {
+    filter: brightness(0.7);
+}
+
+.social-type {
+    font-size: .8rem;
+}
+
+.contact-info {
+    float: right;
+}
+
+.social-linked span {
+    font-family: Nunito, sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
+.social-fb span {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+.social-ig span {
+    font-family: Lobster, cursive;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
+.social-gh span {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 0rem;
+    font-weight: bold;
+}
+
+.social-cv span {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 3rem;
+    font-weight: lighter;
+}
+
+.social-linked  {
+    background: #377399;
+}
+
+.social-fb {
+    background: #2d4b83;
+}
+
+/* Instgram logo background color taken from (https://codepen.io/thomasrye/pen/VaRoYv) */
+.social-ig {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-cv {
+    background: #fff;
+}
+
+.social-cv i {
+    color: #495057;
 }
 
 /* -------------------------------------------------------------------Keyframe Animations */

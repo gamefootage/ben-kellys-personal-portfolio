@@ -15,16 +15,19 @@
 <body>
     <div class="parallax">
         <nav class="navigation navbar-light p-4">
-            <button class="navbar-toggler text-dark mr-5" type="button" data-toggle="collapse" data-target="#main-nav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <div class="collapse navbar-collapse" id="main-nav">  
                 <ul class="navbar-nav">
                     <li class="nav-item m-1">
                         <a href="#main-header" class="nav-link p-2"><i class="fas fa-home"></i> <span>Home</span></a>
                     </li>
+                    <li class="nav-item m-1"><a href="#about-me" class="nav-link p-2"><i class="fas fa-user-alt"></i> <span>About Me</span></a></li>
                     <li class="nav-item ml-0 m-1">
-                        <a href="#main-header" class="nav-link p-2"><i class="fas fa-briefcase"></i> <span>Work Experience</span></a>
+                        <a href="#work-xp" class="nav-link p-2"><i class="fas fa-briefcase"></i> <span>Work Experience</span></a>
                     </li>
                     <li class="nav-item ml-0 m-1">
                         <a href="#main-header" class="nav-link p-2"><i class="fas fa-diploma"></i> <span>Skills And Qualifications</span></a>
@@ -32,6 +35,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="layer">
+            <div class="header-bg"></div>
+        </div>
         <div id="main-header" class="layer-group header-section">
             <div class="layer base">
                 <div class="header">Ben Kelly</div>
@@ -41,14 +47,149 @@
             </div>
         </div>
         <div class="about-bg">
-            <div class="about-header">All About Ben</div>
+            <div class="about-header pl-5 pt-2">All About Ben</div>
         </div>
-        <div class="layer-group about-section">
+        <div id="about-me" class="layer-group about-section row">
             <div class="layer base">
-                <div class="lil-ben"></div>
+                <div class="lil-ben outer-img col-4">
+                    <div class="inner-txt">My name is Ben Kelly. I was born and raised in the seaside town of Galway, in the West
+                        of Ireland. I am currently 18 years old. I love sports (especially basketball), technology, and Christmas.
+                    </div>
+                </div>
             </div>
-            <div class="layer base">
-                <div class="big-ben"></div>
+            <div class="layer back">
+                <div class="middle-ben outer-img col-4">
+                    <div class="inner-txt">My love of sports started with basketball, but by no means did it end there. As well as 
+                        watching every single sport imaginable, I also play Gaelic Football (a native Irish sport) and rugby. I have captained 
+                        teams in all 3 of those sports and was a starter in each. I have 4 basketball player of the years and 2 rugby ones.
+                    </div>
+                </div>
+            </div>
+            <div class="layer front">
+                <div class="big-ben outer-img col-4">
+                    <div class="inner-txt">Right now I am working in Stronger Made Ltd., a contracting company based here in Galway. 
+                        I get to live my dream of a job in technology and explore my passion for innovation through different programming 
+                        languages and problem solving.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="work-xp" class="work-section row">
+            <div class="col-12 work-header">Work Experience Timeline</div>
+            <div class="timeline-item timeline-4 col-12 p-0">
+                <div class="timeline-info" data-dates="09/2020 - Present">
+                    <h4>Stronger Made Ltd.</h4>
+                    <p>Software Developer</p>
+                </div>
+                <div class="work-hidden">
+                    <img src="./assets/images/strongermade.jpeg" alt="Stock photo of man typing on computer">
+                    <ul>
+                        <li class="py-3">Used HTML5, CSS, Javascript, JQuery, React, and Angular to create frontend applications.</li>
+                        
+                        <li class="py-3">Created functional backends with Amazon Web Services and Sql.</li>
+                        
+                        <li class="py-3">Competent knowledge of .NET Framework and Python.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-3 col-12 p-0">
+                <div class="timeline-info" data-dates="09/2019 - 07/2020">
+                    <h4>Bierhaus Bar, Galway</h4>
+                    <p>Stock Assistant</p>
+                </div>
+                <div class="work-hidden">
+                    <img src="./assets/images/bierhaus.jpg" alt="Picture of Bierhaus bar in Galway">
+                    <ul>
+                        <li class="py-3">Helped with taking safe delivery of stock and re-stocking the bar.</li>
+                        
+                        <li class="py-3"> Worked behind the bar serving drinks to customers.</li>
+                        
+                        <li class="py-3">Cleaning the premises and glass collecting.</li>
+                        
+                        <li class="py-3">Helping refit the bar to install COVID19 safety measures.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-2 col-12 p-0">
+                <div class="timeline-info" data-dates="12/2018 - Present">
+                    <h4>Titans Basketball Club, Galway</h4>
+                    <p>Coach</p>
+                </div>
+                <div class="work-hidden">
+                    <img src="./assets/images/titans.jpg" alt="Picture of Titan's Mens' Division One 2020-21 team">
+                    <ul>
+                        <li class="py-3">I have been a player with Titans Basketball Club in Galway City for over 7 years. Captaining from the Under 14 all the way to the Senior team</li>
+                        
+                        <li class="py-3">As part of my commitment to the Club, I have been a coach in their weekly Juvenile Academy, and also help run their training camps 
+                            during the summer and other holidays.</li>
+                        
+                        <li class="py-3">I was head coach for the Under 14 girls’ and Under 11 boys’ teams.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-1 col-12 p-0">
+                <div class="timeline-info" data-dates="09/2019 - 03/2020">
+                    <h4>Mick Lally Theatre, Druid Lane, Galway</h4>
+                    <p>Bartender/Usher</p>
+                </div>
+                <div class="work-hidden">
+                    <img src="./assets/images/druid.jpg" alt="Picture of Mick lally Theatre in Galway">
+                    <ul>
+                        <li class="py-3">Responsible for cleanliness throughout the theatre, stocking the bar and ensuring performers’ 
+                        quarters met their needs.</li>
+                        
+                        <li class="py-3">Providing guests with hot and alcoholic beverages behind the bar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-info" class="footer-contact row">
+            <div class="col-5 footer-social">
+                <div class="contact-type">Social Links</div>
+
+                <div class="social social-linked">
+                    <a target="_blank" href="https://www.linkedin.com/in/ben-kelly-a36b001b2/" >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="social-type">LinkedIn</span>
+                </div>
+
+                <div class="social social-fb">
+                    <a target="_blank" href="https://www.facebook.com/ben.kelly.7509" >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <span class="social-type">Facebook</span>
+                </div>
+
+                <div class="social social-ig">
+                    <a target="_blank" href="https://www.instagram.com/benkelly___/" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <span class="social-type-">Instagram</span>
+                </div>
+
+                <div class="social social-gh">
+                    <a target="_blank" href="https://www.github.com/gamefootage" >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <span class="social-type">GitHub</span>
+                </div>
+
+                <div class="social social-cv">
+                    <a target="_blank" href="/assets/docs/ben-kelly-cv-sept-2020.pdf" >
+                        <i class="fas fa-file-download"></i>
+                    </a>
+                    <span class="social-type">My CV / Resume</span>
+                </div>
+
+            </div>
+            <div class="col-7">
+                <div class="contact-type">Contact Details</div>
             </div>
         </div>
     </div>
