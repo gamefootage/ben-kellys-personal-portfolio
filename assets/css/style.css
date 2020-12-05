@@ -458,6 +458,10 @@ body {
     height: 100%;
 }
 
+.social span {
+    cursor: pointer;
+}
+
 .social {
     display: block;
     margin: 2rem 0;
