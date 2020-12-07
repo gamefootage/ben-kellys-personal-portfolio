@@ -12,6 +12,9 @@ body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    perspective-origin: 100%;
+    -webkit-perspective-origin: 100%;
+    -moz-perspective-origin: 100%;
 }
 
 .layer-group {
@@ -27,6 +30,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    transform-origin: 100%;
 }
 
 .back {
@@ -46,119 +50,16 @@ body {
 
 /* -------------------------------------------------------------------Header */
 
-.navigation {
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-    background-color: rgba(31, 30, 30, 0.7) !important;
-    position: sticky;
-    top: 0;
-    z-index: 1032;
-    width: 100%;
-}
-
-.navbar-nav {
-    width: 100%;
-    height: 100%;
-}
-
-.navbar-brand {
-    float: right;
-    color: white !important;
-    font-size: 1.9rem;
-}
-
-#main-nav {
-    width: 100vw;
-    height: 94vh;
-    background-color: rgba(31, 30, 30, 0.7);
-}
-
-.navbar-collapse {
-    /* opacity: 0.6; */
-    position: absolute;
-    /* background: rgb(88, 88, 88); */
-    left: 0;
-}
-
-.nav-link {
-    white-space: nowrap;
-    color: white !important;
-    transition: all 0.4s ease-in-out;
-}
-
-.nav-link.active {
-    filter: brightness(0.7);
-}
-
-.nav-link:hover {
-    filter: brightness(0.8);
-    transition: all 0.4s ease-in-out;
-}
-
-.navbar-toggler {
-    background: transparent;
-    color: #2c2c2c;
+.navbar.bg-dark {
+    background: rgba(36, 35, 35, 0.7) !important;
 }
 
 /* Burger animation based on https://codepen.io/erikterwan/pen/EVzeRP */
-
-.navbar-toggler span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-.navbar-toggler span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-.navbar-toggler span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-.navbar-toggler[aria-expanded="true"] span {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0px, 2px);
-    background: #cdcdcd;
-}
-
-.navbar-toggler[aria-expanded="true"] span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(-45deg) translate(-7px, -13px);
-}
-
-.navbar-toggler[aria-expanded="true"] span:nth-last-child(2)
-{
-  transform: rotate(45deg) translate(-5px, -10px);
-}
 
 .header-section {
     font-family: 'Julius Sans One';
     color: #fff;
     z-index: 4;
-    /* background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("/assets/images/portfolio.jpg");
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -199,7 +100,7 @@ body {
     -moz-animation: fadein 1.5s;
     -webkit-animation: fadein 1.5s;
     -o-animation: fadein 1.5s;
-     animation-fill-mode: both;
+    animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
     -o-animation-fill-mode: both;
@@ -599,13 +500,6 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .work-header {
-        font-size: 5rem;
-        height: 7rem;
-    }
-}
-
 @media screen and (max-width: 568px) {
     .caption {
         top: 70%;
@@ -649,7 +543,7 @@ body {
 }
 
 /* Checking if device has hover capabilities learned from https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134 */
-@media (hover: none) {
+@media (hover: none) and (max-width: 1024px) {
 
     .inner-txt {
     font-size: 1.4rem;
@@ -774,6 +668,31 @@ body {
         width: inherit;
     }
 
+    @media screen and (max-width: 768px) {
+
+        .caption {
+            top: 65%;
+        }
+    
+        .outer-img {
+            width: 100%;
+        }
+    
+        .inner-txt {
+            font-size: 1.2rem;
+        }
+    
+        .big-ben {
+            top: -9%;
+        }
+    
+        .work-header {
+            font-size: 5rem;
+            height: 7rem;
+        }
+    }
+
+
     @media screen and (max-width: 568px) {
         .lil-ben {
             background-position: 78% 50%;
@@ -807,6 +726,14 @@ body {
     }
 
     @media screen and (max-width: 460px) {
+        .header {
+            top: 40%;
+        }
+
+        .caption {
+            top: 70%;
+        }
+
         .about-header {
             font-size: 3rem;
         }
@@ -814,6 +741,24 @@ body {
         .work-header {
             font-size: 2rem;
             white-space: nowrap;
+            height: 3rem;
+        }
+
+        .base {
+            transform: none;
+        }
+    
+        .back {
+            transform: none;
+        }
+    
+        .front {
+            transform: none;
+        }
+
+        .outer-img {
+            width: 100%;
+            height: 33.333%;
         }
     }
 }
