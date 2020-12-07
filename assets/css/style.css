@@ -61,6 +61,12 @@ body {
     height: 100%;
 }
 
+.navbar-brand {
+    float: right;
+    color: white !important;
+    font-size: 1.9rem;
+}
+
 #main-nav {
     width: 100vw;
     height: 94vh;
@@ -547,6 +553,11 @@ body {
 
 .address i {
     color: rgb(204, 44, 44);
+}
+
+.address a {
+    text-decoration: none;
+    color: white;
 }
 
 /* -------------------------------------------------------------------Media Queries */
