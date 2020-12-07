@@ -48,16 +48,23 @@ body {
 
 .navigation {
     position: absolute;
-    /* background: rgb(88, 88, 88); */
     transition: all 0.5s ease-in-out;
+    background-color: rgba(31, 30, 30, 0.7) !important;
     position: sticky;
     top: 0;
     z-index: 1032;
-    width: 20%;
+    width: 100%;
 }
 
 .navbar-nav {
     width: 100%;
+    height: 100%;
+}
+
+#main-nav {
+    width: 100vw;
+    height: 94vh;
+    background-color: rgba(31, 30, 30, 0.7);
 }
 
 .navbar-collapse {
@@ -69,7 +76,7 @@ body {
 
 .nav-link {
     white-space: nowrap;
-    color: rgb(119, 119, 119) !important;
+    color: white !important;
     transition: all 0.4s ease-in-out;
 }
 
@@ -122,7 +129,7 @@ body {
 .navbar-toggler[aria-expanded="true"] span {
     opacity: 1;
     transform: rotate(-45deg) translate(0px, 2px);
-    background: #232323;
+    background: #cdcdcd;
 }
 
 .navbar-toggler[aria-expanded="true"] span:nth-last-child(3)
@@ -265,7 +272,7 @@ body {
     width: 33.333%;
     height: 100%;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: auto;
@@ -288,12 +295,12 @@ body {
     width: 33.333%;
     height: 100%;
     position: absolute;
-    top: 15%;
+    top: -5%;
     right: 0;
     pointer-events: auto;
     display: table;
     text-align: center;
-    /* transform: translate(-50%, -50%); */
+    /* transform: translate(50%, 50%); */
 }
 
 .big-ben:hover {
@@ -326,18 +333,21 @@ body {
     background-attachment: fixed;
     font-size: 9rem;
     color: #fff;
-    margin-bottom: 1rem;
     font-family: 'Bebas Neue', sans-serif;
 }
 
+.timeline {
+    overflow: hidden;
+}
+
 .timeline-item {
-    /* padding: 2em 2em 0em 2em; */
+    padding: 2em 2em 0em 0em;
     position: relative;
     color: #fafafa;
     border-left: 1px solid;
     transition: all 0.6s ease-in-out;
     transition-delay: 0.3s;
-    background-color: #001318;
+    background-color: #00181e;
 }
 
 .timeline-info {
@@ -413,7 +423,7 @@ body {
 
 .timeline-info {
     padding: 0 0 2em 2em;
-    background: #00181e;
+    background: #001318;
 }
 
 .work-hidden img {
@@ -448,134 +458,93 @@ body {
 
 /* -------------------------------------------------------------------Contact Footer */
 
-.footer-contact {
-    font-size: 4rem;
-    height: 50rem;
+.footer {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    height: 6vh;
+    width: 100%;
+    z-index: 1032;
 }
 
-.footer-social {
-    background-color: rgb(218, 38, 98);
+.main-row {
     height: 100%;
 }
 
-.social span {
-    cursor: pointer;
-}
-
 .social {
-    display: block;
-    margin: 2rem 0;
-    border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-    white-space: nowrap;
-}
-.social i:not(.fa-github):not(.social-cv) {
+    text-align: center;
+    cursor: pointer;
     position: relative;
-    left: 22%;
-}
-
-.social-gh a i{
-    font-size: 6rem;
-}
-
-.footer-social a {
-    text-decoration: none;
-    color: #fff;
-    border-radius: 50%;
+    align-items: stretch;
 }
 
 .social a {
-    display: inline;
-    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.social:not(.social-fb) {
-    text-align: center;
+.social:not(.gm) a {
+    color: white;
 }
 
-.social-fb i {
-    left: 20%;
-}
-
-.fa-github {
-    display: inline-block;
-    font-size: 4rem;
-    border-radius: 50%;
-}
-
-.fa-github:hover {
-    filter: brightness(0.5);
+.gm a {
+    color: black;
 }
 
 .social:hover {
     filter: brightness(0.7);
 }
 
-.social-type {
-    font-size: .8rem;
+.social i {
+    line-height: 6vh;
 }
 
-.contact-info {
-    float: right;
-}
-
-.social-linked span {
-    font-family: Nunito, sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 2rem;
-}
-
-.social-fb span {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 3rem;
-}
-
-.social-ig span {
-    font-family: Lobster, cursive;
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 2rem;
-}
-
-.social-gh span {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 0rem;
-    font-weight: bold;
-}
-
-.social-cv span {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 3rem;
-    font-weight: lighter;
-}
-
-.social-linked  {
-    background: #377399;
-}
-
-.social-fb {
+.fb {
     background: #2d4b83;
+    color: white;
 }
 
-/* Instgram logo background color taken from (https://codepen.io/thomasrye/pen/VaRoYv) */
-.social-ig {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+.li {
+    background: #377399;
+    color: white;
 }
 
-.social-cv {
-    background: #fff;
+/* For instagram background color: https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background */
+.ig {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
 }
 
-.social-cv i {
-    color: #495057;
+.gh {
+    background: #2d2d2d;
+    color: white;
+}
+
+.gm {
+    background: white;
+}
+
+.wa {
+    background: #00b34e;
+    color: white;
+}
+
+.address {
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 0.1px;
+    line-height: 3rem;
+    background: #2c2c2c;
+    color: white;
+}
+
+.address i {
+    color: rgb(204, 44, 44);
 }
 
 /* -------------------------------------------------------------------Keyframe Animations */
