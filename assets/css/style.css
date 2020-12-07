@@ -209,6 +209,7 @@ body {
 .about-section {
     color: #2c2c2c;
     z-index: 5;
+    overflow: clip;
 }
 
 .about-bg {
@@ -246,7 +247,7 @@ body {
     background: url("../images/lil-ben-1.jpg");
     background-position: right;
     background-size: cover;
-    width: 33.333%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -269,7 +270,7 @@ body {
     background: url("../images/middle-ben.jpg");
     background-position: center;
     background-size: cover;
-    width: 33.333%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 50%;
@@ -283,7 +284,7 @@ body {
 .middle-ben:hover {
     background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
     background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-    background-position: right;
+    background-position: center;
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
@@ -292,7 +293,7 @@ body {
     background: url("../images/big-ben.jpeg");
     background-position: center;
     background-size: cover;
-    width: 33.333%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: -5%;
@@ -327,7 +328,7 @@ body {
 
 .work-header {
     position: relative;
-    background: url("../images/timeline.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(24, 23, 23, 0.5)), url("../images/timeline.jpeg");
     background-size: cover;
     height: 10rem;
     background-attachment: fixed;
@@ -443,9 +444,10 @@ body {
     height: 20rem;
     font-size: 1.5rem;
     font-family: Oswald, sans-serif;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin-left: 2rem;
     padding-left: 1rem;
+    list-style-type: square;
 }
 
 .timeline-4 {
@@ -545,6 +547,264 @@ body {
 
 .address i {
     color: rgb(204, 44, 44);
+}
+
+/* -------------------------------------------------------------------Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .lil-ben {
+        background-position: 90% 50%;
+    }
+
+    .lil-ben:hover {
+        background-position: 90% 50%;
+    }
+
+    .big-ben {
+        top: -7%;
+    }
+
+    .work-header {
+        font-size: 7rem;
+    }
+
+    .timeline-item:hover .work-hidden img {
+        width: 40rem;
+        margin: auto;
+        display: block;
+    }
+    .timeline-item:hover .work-hidden {
+        height: auto;
+        display: inline-block;
+        transition: all 0.6s ease-in-out
+    }
+
+    .timeline-item:hover .work-hidden ul {
+        height: 15rem;
+        width: 30rem;
+        margin: auto;
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work-header {
+        font-size: 5rem;
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .caption {
+        top: 70%;
+    }
+
+    #about-me .base {
+        transform: none;
+    }
+
+    #about-me .back {
+        transform: none;
+    }
+
+    #about-me .front {
+        transform: none;
+    }
+
+    .work-hidden img {
+        object-fit: cover;
+        height: 15rem;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+    }
+
+    .work-hidden ul {
+        width: 70%;
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+    }
+
+    .work-hidden ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Checking if device has hover capabilities learned from https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134 */
+@media (hover: none) {
+
+    .inner-txt {
+    font-size: 1.4rem;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    opacity: 1;
+    font-family: 'Julius Sans One', sans-serif;
+    }
+
+    .lil-ben {
+        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
+        background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
+        background-position: right;
+        background-size: cover;
+        width: 33.333%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        pointer-events: auto;
+        display: table;
+        text-align: center;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .middle-ben {
+        background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 33.333%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: auto;
+        display: table;
+        text-align: center;
+    }
+
+    .big-ben {
+        background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background-position: center;
+        background-size: cover;
+        width: 33.333%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: auto;
+        display: table;
+        text-align: center;
+        /* transform: translate(50%, 50%); */
+    }
+
+    .timeline-item .work-hidden {
+        padding-top: 2rem;
+        position: relative;
+        opacity: 1;
+        transition: all 0.6s ease-in-out;
+        visibility: visible;
+        margin-bottom: 0;
+        display: block;
+        padding-bottom: 2rem;
+    }
+
+    .work-hidden img {
+        object-fit: cover;
+        height: 18rem;
+        width: 36rem;
+        display: block;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: auto;
+    }
+
+    .work-hidden ul {
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+
+    .work-hidden ul li {
+    font-size: 1.5rem;
+    font-family: Oswald, sans-serif;
+    line-height: 3rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    }
+
+    .timeline-info::before {
+    left: 2em;
+    transition-delay: 0.3s;
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    margin-left: 0;
+    opacity: 1;
+    background: transparent;
+    }
+
+    .timeline-info:after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 2.4em;
+        position: absolute;
+        left: -0.3em;
+        border-radius: 12px;
+        content: '';
+        background-color: #fafafa;
+    }
+
+    .timeline-info {
+        padding-top: 2rem;
+    }
+
+    .timeline-item {
+        width: inherit;
+    }
+
+    @media screen and (max-width: 568px) {
+        .lil-ben {
+            background-position: 78% 50%;
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        .outer-img {
+            width: 100%;
+            height: 33.333%;
+        }
+
+        .inner-txt {
+            font-size: 1.2rem;
+        }
+
+        .big-ben {
+            top: 66.667%;
+        }
+
+        .about-header {
+            font-size: 5rem;
+            margin: auto !important;
+            line-height: 9rem;
+        }
+
+        .work-header {
+            font-size: 3rem;
+            line-height: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        .about-header {
+            font-size: 3rem;
+        }
+
+        .work-header {
+            font-size: 2rem;
+            white-space: nowrap;
+        }
+    }
 }
 
 /* -------------------------------------------------------------------Keyframe Animations */
