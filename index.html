@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Kelly's Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -16,20 +15,20 @@
     <div class="parallax">
 
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">BK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Hidden brand</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-header">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#work-xp">Work Experience</a>
                     </li>
                 </ul>
             </div>
@@ -52,25 +51,22 @@
         </div>
         <div id="about-me" class="layer-group about-section row">
             <div class="layer base">
-                <div class="lil-ben outer-img col-lg-4">
-                    <div class="inner-txt m-2">My name is Ben Kelly. I was born and raised in the seaside town of Galway, in the West
-                        of Ireland. I am currently 18 years old. I love sports (especially basketball), technology, and Christmas.
-                    </div>
+                <div class="lil-ben outer-img col-lg-4 p-4">
+                    <span>My name is Ben Kelly. I was born and raised in the seaside town of Galway, in the West
+                    of Ireland. I am currently 18 years old. I love sports (especially basketball), technology, and Christmas.</span>
                 </div>
             </div>
             <div class="layer back">
-                <div class="middle-ben outer-img col-lg-4 col-sm-12">
-                    <div class="inner-txt m-4 my-5">I watch every single sport imaginable and I also play basketball, Gaelic football (a native Irish sport) and rugby. I have captained 
-                        teams in all 3 of those sports and was a starter in each. I have 7 individual awards in all 3.
-                    </div>
+                <div class="middle-ben outer-img col-lg-4 p-4">
+                    <span>I watch every single sport imaginable and I also play basketball, Gaelic football (a native Irish sport) and rugby. I have captained 
+                        teams in all 3 of those sports and was a starter in each. I have 7 individual awards in all 3.</span>
                 </div>
             </div>
             <div class="layer front">
-                <div class="big-ben outer-img col-lg-4 col-sm-12">
-                    <div class="inner-txt m-2">Right now I am working in Stronger Made Ltd., a contracting company based here in Galway. 
+                <div class="big-ben outer-img col-lg-4 p-4">
+                    <span>Right now I am working in Stronger Made Ltd., a contracting company based here in Galway. 
                         I get to live my dream of a job in technology and explore my passion for innovation through different programming 
-                        languages and problem solving.
-                    </div>
+                        languages and problem solving.</span>
                 </div>
             </div>
         </div>
@@ -172,7 +168,7 @@
                     <a  target="_blank" href="https://wa.me/353852030033"><i class="fab fa-whatsapp"></i></a>
                 </div>
                 <div class="col-lg-5 col-sm-12 address">
-                    <a  target="_blank" href="https://goo.gl/maps/13Ch7YvvciuE6CG4A"><i class="fas fa-map-pin"></i> Address: 54 Na Blatha Craige, Clybaun Rd, Galway, Ireland | H91RP7E
+                    <a  target="_blank" href=""><i class="fas fa-map-pin"></i> Location: Galway City, Galway, Ireland
                 </div>
             </div>
         </div>
