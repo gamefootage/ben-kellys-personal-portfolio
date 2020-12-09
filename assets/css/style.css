@@ -30,21 +30,23 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    transform-origin: bottom right;
+    /* transform-origin: bottom right; */
 }
 
 .back {
-    transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(1.2);
     pointer-events: none;
+    z-index: 3;
 }
 
 .base {
     transform: translateZ(0);
     pointer-events: none;
+    z-index: 4;
 }
 
 .front {
-    transform: translateZ(1px);
+    transform: translateZ(1px) scale(0.8);
     pointer-events: none;
 }
 
@@ -59,7 +61,7 @@ body {
 .header-section {
     font-family: 'Julius Sans One';
     color: #fff;
-    z-index: 4;
+    z-index: 6;
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -68,6 +70,7 @@ body {
 .header-bg {
     background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("../images/portfolio.jpg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("../images/portfolio.jpg");
+    z-index: 6;
     width: 100%;
     height: 115vh;
     background-size: cover;
@@ -110,20 +113,19 @@ body {
     -webkit-animation-delay: 1.4s;
     -moz-animation-delay: 1.4s;
     -o-animation-delay: 1.4s;
-    transform: translate(-50%, -50%);
 }
 
 /* -------------------------------------------------------------------About */
 
 .about-section {
     color: #2c2c2c;
-    z-index: 5;
+    z-index: 4;
     overflow: clip;
 }
 
 .about-bg {
     background: rgb(110, 7, 7);
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 10rem;
     z-index: 6;
