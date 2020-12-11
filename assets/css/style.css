@@ -165,7 +165,7 @@ body {
 .about-section {
     color: #2c2c2c;
     z-index: 4;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .about-bg {
