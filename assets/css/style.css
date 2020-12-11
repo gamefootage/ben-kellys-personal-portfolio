@@ -576,112 +576,18 @@ body {
 
 /* Checking if device has hover capabilities learned from https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134 */
 
-@media screen and (max-width: 1199px) {
-    .work-title {
-        font-size: 5rem;
-    }
-
-    .timeline-2:hover .work-hidden img {
-        width: 40rem;
-        margin: auto;
-        display: block;
-    }
-
-    .timeline-2:hover .work-hidden {
-        height: auto;
-        display: inline-block;
-        transition: all 0.6s ease-in-out;
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .timeline-2:hover .work-hidden ul {
-        height: min-content;
-        width: 45rem;
-        margin: auto;
-        display: block;
-        clear: both;
-    }
-
-    .timeline-2:hover .work-hidden ul li {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
-    }
-
-    .outer-img {
-        height: 33.333%;
-        width: 100%;
-        display: block;
-    }
-
-    .about-txt {
-        font-size: 1rem;
-    }
-
-    .inner-txt {
-        height: 33.333%;
-    }
-
-    .middle-ben {
-        background-position: 0 30%;
-        top: 33.333%;
-        height: 55%;
-    }
-
-    .middle-ben-txt:hover ~ .layer .middle-ben {
-        background-position: 0 30%;
-    }
-
-    .big-ben {
-        top: 73%;
-        left: 50%;
-        background-position: 50% 30%;
-    }
-
-    .big-ben-txt:hover ~ .layer .big-ben {
-        background-position: 50% 30%;
-    }
-
-    @media (hover: none) {
-        .big-ben {
-            background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background-position: center;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
+@media screen and (hover: hover) and (max-width: 1199px) {
+        .work-title {
+            font-size: 5rem;
         }
 
-        .timeline-item:focus .timeline-info {
-            background: #07042f;
-        }
-
-        .middle-ben {
-            background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background-position: center 20%;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .lil-ben {
-            background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
-            background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
-            background-position: right;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .about-txt {
-            opacity: 1;
-        }
-
-        .timeline-2 .work-hidden img {
+        .timeline-2:hover .work-hidden img {
             width: 40rem;
             margin: auto;
             display: block;
         }
 
-        .timeline-2 .work-hidden {
+        .timeline-2:hover .work-hidden {
             height: auto;
             display: inline-block;
             transition: all 0.6s ease-in-out;
@@ -689,7 +595,7 @@ body {
             width: 100%;
         }
 
-        .timeline-2 .work-hidden ul {
+        .timeline-2:hover .work-hidden ul {
             height: min-content;
             width: 45rem;
             margin: auto;
@@ -697,38 +603,132 @@ body {
             clear: both;
         }
 
-        .timeline-2 .work-hidden ul li {
+        .timeline-2:hover .work-hidden ul li {
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
         }
 
-        .timeline-item .timeline-info {
-            transition: all 0.6s ease-in-out;
-            padding-top: 2em;
+        .outer-img {
+            height: 33.333%;
+            width: 100%;
+            display: block;
         }
 
-        .timeline-item .work-hidden {
-            visibility: visible;
-            opacity: 1;
-            padding-top: 2em;
-            margin-bottom: 0;
-            padding-bottom: 4rem;
-            padding-left: 2em;
+        .about-txt {
+            font-size: 1rem;
         }
 
-        .timeline-item .timeline-info::before {
-            left: 2em;
-            transition-delay: 1s;
-            transition: all 0.6s ease-in-out;
-            visibility: visible;
-            margin-left: 0;
-            opacity: 1;
-            background: transparent;
+        .inner-txt {
+            height: 33.333%;
         }
+
+        .middle-ben {
+            background-position: 0 30%;
+            top: 33.333%;
+            height: 55%;
+        }
+
+        .middle-ben-txt:hover ~ .layer .middle-ben {
+            background-position: 0 30%;
+        }
+
+        .big-ben {
+            top: 73%;
+            left: 50%;
+            background-position: 50% 30%;
+        }
+
+        .big-ben-txt:hover ~ .layer .big-ben {
+            background-position: 50% 30%;
+        }
+    }
+
+@media screen and (hover: none) and (max-width: 1199px) {
+    .big-ben {
+        background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background-position: center;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .timeline-item:focus .timeline-info {
+        background: #07042f;
+    }
+
+    .middle-ben {
+        background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background-position: center 20%;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .lil-ben {
+        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
+        background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
+        background-position: right;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .about-txt {
+        opacity: 1;
+    }
+
+    .timeline-2 .work-hidden img {
+        width: 40rem;
+        margin: auto;
+        display: block;
+    }
+
+    .timeline-2 .work-hidden {
+        height: auto;
+        display: inline-block;
+        transition: all 0.6s ease-in-out;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .timeline-2 .work-hidden ul {
+        height: min-content;
+        width: 45rem;
+        margin: auto;
+        display: block;
+        clear: both;
+    }
+
+    .timeline-2 .work-hidden ul li {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .timeline-item .timeline-info {
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
+
+    .timeline-item .work-hidden {
+        visibility: visible;
+        opacity: 1;
+        padding-top: 2em;
+        margin-bottom: 0;
+        padding-bottom: 4rem;
+        padding-left: 2em;
+    }
+
+    .timeline-item .timeline-info::before {
+        left: 2em;
+        transition-delay: 1s;
+        transition: all 0.6s ease-in-out;
+        visibility: visible;
+        margin-left: 0;
+        opacity: 1;
+        background: transparent;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (hover: hover) and (max-width: 768px) {
     .lil-ben {
         background-position: 90% 50%;
     }
@@ -761,83 +761,83 @@ body {
         display: block;
         clear: both;
     }
+}
 
-    @media (hover: none) {
-        .big-ben {
-            background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background-position: center;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
+@media screen and (hover: none) and (max-width: 768px) {
+    .big-ben {
+        background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background-position: center;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .timeline-item:focus .timeline-info {
-            background: #07042f;
-        }
+    .timeline-item:focus .timeline-info {
+        background: #07042f;
+    }
 
-        .middle-ben {
-            background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background-position: center 20%;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
+    .middle-ben {
+        background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background-position: center 20%;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .lil-ben {
-            background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
-            background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
-            background-position: right;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
+    .lil-ben {
+        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
+        background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
+        background-position: right;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .about-txt {
-            opacity: 1;
-        }
+    .about-txt {
+        opacity: 1;
+    }
 
-        .timeline-info {
-            transition: all 0.6s ease-in-out;
-            padding-top: 2em;
-        }
+    .timeline-info {
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
 
-        .timeline-item .work-hidden img {
-            width: 30rem;
-            margin: auto;
-            display: block;
-        }
+    .timeline-item .work-hidden img {
+        width: 30rem;
+        margin: auto;
+        display: block;
+    }
 
-        .timeline-item .work-hidden {
-            height: auto;
-            display: inline-block;
-            transition: all 0.6s ease-in-out;
-            padding-left: 0;
-            width: 100%;
-            opacity: 1;
-            visibility: visible;
-            margin-bottom: 0;
-        }
+    .timeline-item .work-hidden {
+        height: auto;
+        display: inline-block;
+        transition: all 0.6s ease-in-out;
+        padding-left: 0;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 0;
+    }
 
-        .timeline-item .work-hidden ul {
-            height: min-content;
-            width: 30rem;
-            margin: auto;
-            display: block;
-            clear: both;
-        }
+    .timeline-item .work-hidden ul {
+        height: min-content;
+        width: 30rem;
+        margin: auto;
+        display: block;
+        clear: both;
+    }
 
-        .timeline-info::before {
-            left: 2em;
-            transition-delay: 1s;
-            transition: all 0.6s ease-in-out;
-            visibility: visible;
-            margin-left: 0;
-            opacity: 1;
-            background: transparent;
-        }
+    .timeline-info::before {
+        left: 2em;
+        transition-delay: 1s;
+        transition: all 0.6s ease-in-out;
+        visibility: visible;
+        margin-left: 0;
+        opacity: 1;
+        background: transparent;
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (hover: hover) and (max-width: 568px) {
     .caption {
         top: 70%;
         font-size: 2rem;
@@ -995,68 +995,66 @@ body {
     .timeline-item {
         width: inherit;
     }
+}
+@media screen and (max-width: 568px) and (hover: none) {
+    .big-ben {
+        background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
+        background-position: center;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-    @media (hover: none) {
-        .big-ben {
-            background: -webkit-linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background: linear-gradient(left, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
-            background-position: center;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
+    .timeline-item:focus .timeline-info {
+        background: #07042f;
+    }
 
-        .timeline-item:focus .timeline-info {
-            background: #07042f;
-        }
+    .middle-ben {
+        background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
+        background-position: center 20%;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .middle-ben {
-            background: -webkit-linear-gradient(bottom, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background: linear-gradient(bottom, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-            background-position: center 20%;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
+    .lil-ben {
+        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
+        background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
+        background-position: right;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .lil-ben {
-            background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
-            background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
-            background-position: right;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .about-txt {
-            opacity: 1;
-        }
-
-        .timeline-info {
-            transition: all 0.6s ease-in-out;
-            padding-top: 2em;
-        }
-
-        .timeline-item .work-hidden {
-        padding-top: 2rem;
-        position: relative;
+    .about-txt {
         opacity: 1;
+    }
+
+    .timeline-info {
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
+
+    .timeline-item .work-hidden {
+    padding-top: 2rem;
+    position: relative;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    margin-bottom: 0;
+    display: block;
+    padding-bottom: 2rem;
+    padding-left: 0;
+}
+
+    .timeline-info::before {
+        left: 2em;
+        transition-delay: 1s;
         transition: all 0.6s ease-in-out;
         visibility: visible;
-        margin-bottom: 0;
-        display: block;
-        padding-bottom: 2rem;
-        padding-left: 0;
+        margin-left: 0;
+        opacity: 1;
+        background: transparent;
     }
-
-        .timeline-info::before {
-            left: 2em;
-            transition-delay: 1s;
-            transition: all 0.6s ease-in-out;
-            visibility: visible;
-            margin-left: 0;
-            opacity: 1;
-            background: transparent;
-        }
-    }
-
 }
 
 /* -------------------------------------------------------------------Keyframe Animations */
