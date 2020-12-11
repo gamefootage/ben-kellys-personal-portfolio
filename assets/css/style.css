@@ -381,7 +381,7 @@ body {
 }
 
 .timeline-item:hover .timeline-info {
-    background: #07042f;
+    background: attr(data-color);
     transition: all 0.6s ease-in-out;
     padding-top: 2em;
 }
