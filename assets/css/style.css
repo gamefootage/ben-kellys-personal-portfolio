@@ -380,8 +380,26 @@ body {
     transition-delay: 0.3s;
 }
 
-.timeline-item:hover .timeline-info {
-    background: attr(data-color);
+.timeline-4:hover .timeline-info {
+    background: rgb(7, 17, 43);
+    transition: all 0.6s ease-in-out;
+    padding-top: 2em;
+}
+
+.timeline-3:hover .timeline-info {
+    background: rgb(13, 78, 11);
+    transition: all 0.6s ease-in-out;
+    padding-top: 2em;
+}
+
+.timeline-2:hover .timeline-info {
+    background: rgb(7, 59, 63);
+    transition: all 0.6s ease-in-out;
+    padding-top: 2em;
+}
+
+.timeline-1:hover .timeline-info {
+    background: rgb(104, 53, 6);
     transition: all 0.6s ease-in-out;
     padding-top: 2em;
 }
