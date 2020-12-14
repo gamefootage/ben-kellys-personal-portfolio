@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Kelly's Portfolio</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -73,6 +73,104 @@
             </div>
             <div class="layer back">
                 <div class="big-ben outer-img"></div>
+            </div>
+        </div>
+
+        <div id="skill" class="skill-ach-section">
+            <div id="skill-half" class="skill-half">
+                <div class="layer ignore-layer">
+                    <div class="basketball-skill basketball-img collapse" data-parent="#skill"></div>
+                </div>
+                <div class="layer ignore-layer">
+                    <div class="football-skill football-img collapse" data-parent="#skill"></div>
+                </div>
+                <div class="layer ignore-layer">
+                    <div class="rugby-skill rugby-img collapse" data-parent="#skill"></div>
+                </div>
+                <div class="layer ignore-layer">
+                    <div class="tech-skill tech-img collapse" data-parent="#skill"></div>
+                </div>
+                <div class="half-title">Skill</div>
+                <div class="skill-btn-group">
+                    <button class="btn basketball-btn skill-btn" type="button" data-toggle="collapse" data-target=".basketball-skill" aria-expanded="false" aria-controls=".basketball-skill">Basketball <i class="fas fa-basketball-ball"></i></button>
+                    <button class="btn football-btn skill-btn" type="button" data-toggle="collapse" data-target=".football-skill" aria-expanded="false" aria-controls=".football-skill">Football <i class="fas fa-volleyball-ball"></i></button>
+                    <button class="btn rugby-btn skill-btn" type="button" data-toggle="collapse" data-target=".rugby-skill" aria-expanded="false" aria-controls=".rugby-skill">Rugby <i class="fas fa-football-ball"></i></button>
+                    <button class="btn tech-btn skill-btn" type="button" data-toggle="collapse" data-target=".tech-skill" aria-expanded="false" aria-controls=".tech-skill">Technology <i class="fas fa-laptop"></i></button>
+                </div>
+                <div class="half-scroll" id="half-scroll">
+                    <div class="layer-group">
+                        <div id="basketball-skill" class="skill-type basketball-skill collapse" data-parent="#skill">
+                            <div class="skill layer back">
+                                <div class="basketball-bg"></div>
+                                <div class="details">
+                                    I have played basketball since age 12. I have played international basketball for the Irish Under 15, 16, 17(Captain), and 18 teams.
+                                    I have also represented and captained the West region in the inter-regional competition. My other achievements in basketball include captaining two All Ireland Quarter
+                                    Final teams with my school and coaching Under 15 schools girls to a regional win.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="football-skill" class="skill-type football-skill collapse" data-parent="#skill">
+                            <div class="skill layer back">
+                                <div class="football-bg"></div>
+                                <div class="details">
+                                    I played Gaelic Football for 3 years. In my first year of playing I started and won the Club County Championship for Under 14 and just a year later
+                                    in schools' football I was captain of a team that reached a Connact Final. I won another two cups in football and started at every level I played in.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rugby-skill" class="skill-type rugby-skill collapse" data-parent="#skill">
+                            <div class="skill layer back">
+                                <div class="rugby-bg"></div>
+                                <div class="details">
+                                    I played rugby for school and club between 14 and 18. In my first year of playing at school I finished top scorer and won player of the year. The following year
+                                    I was a key member of our team that reached the junior cup final. For my club I won a player of the year and 3 cups in 3 years with the team and started every season.
+                                    I also started as a member of the senior schools team after a 2 year hiatus.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tech-skill" class="skill-type tech-skill collapse" data-parent="#skill">
+                            <div class="skill layer back">
+                                <div class="tech-bg"></div>
+                                <div class="details">
+                                    My passion for technology runs deep. Whether it be a games console as early as a Gameboy or Atari, software development, or design I find it extremely enjoyable.
+                                    My knowledge of programming includes JavaScript, JQuery, HTML5, CSS3, SQL, AWS, .NET, Angular and React, to name a few. My love for this field of work ensures my knowledge 
+                                    and skill set is ever evolving.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ach-half">
+                <h2 class="half-title">Achivements and Qualifications</h2>
+                <div class="half-scroll layer-group">
+                    <div class="ach">
+                        <span class="star basketball-skill ach-text collapse" data-parent="#skill">4 International Caps</span>
+                        <span class="star football-skill ach-text collapse" data-parent="#skill">2 County Titles</span>
+                        <span class="star rugby-skill ach-text collapse" data-parent="#skill">2 Player Of The Year Awards</span>
+                        <span class="brief tech-skill ach-text collapse" data-parent="#skill">Full Time Employee of Stronger Made Ltd.</span>
+                    </div>
+                    <div class="ach">
+                        <span class="basketball-skill degree ach-text collapse">"Introduction to Coaching"
+                        (issued by Basketball Ireland)</span>
+                    </div>
+                    <div class="ach">
+                        <span class="basketball-skill degree ach-text collapse">"Introduction to Coaching"
+                        (issued by Basketball Ireland)</span>
+                    </div>
+                    <div class="grades">
+                        <strong class="text-center">Leaving Certificate – 2020</strong>  
+                        <strong class="text-center">Coláiste Iognáid (The Jes) Galway</strong>
+                        <ul>
+                            <li>English <span> H3 (70%-80%)</span></li>
+                            <li>Maths <span> H4 (60%-70%)</span></li>
+                            <li>German <span> H3 (70%-80%)</span></li>
+                            <li>Accounting <span> H3 (70%-80%)</span></li>
+                            <li>Business <span> H3 (70%-80%)</span></li>
+                            <li>Biology <span> H4 (60%-70%)</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
