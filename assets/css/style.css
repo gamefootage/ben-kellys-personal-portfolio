@@ -30,7 +30,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    /* transform-origin: bottom right; */
 }
 
 .back {
@@ -616,9 +615,10 @@ body {
     text-align: center;
     color: white;
     font-family: Nunito, sans-serif;
-    margin-left: auto;
+    margin: auto;
     height: 10vh;
-    width: 80%;
+    width: max-content;
+    line-height: 1.2rem;
 }
 
 .half-scroll {
@@ -644,14 +644,13 @@ body {
 .skill-btn {
     width: 100%;
     margin: 1rem 0;
-    padding: 2rem 0;
+    padding: 1.75rem 0;
     color: white;
 }
 
 .skill-btn i {
     font-size: 2rem;
     display: block;
-    margin-top: 1rem;
 }
 
 .basketball-btn {
@@ -687,13 +686,13 @@ body {
 }
 
 .details {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
     left: 50%;
-    top: 25%;
-    height: 50%;
+    top: 15%;
+    height: 30%;
     width: 60%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease-in-out;
     text-shadow: 2px 2px 4px #000000;
@@ -743,48 +742,30 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.basketball-img {
-    background: url(/assets/images/stock-basketball.jpeg);
+.skill-img {
     width: 100%;
     height: 200vh;
     z-index: -2;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: top !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+.basketball-img {
+    background: url(/assets/images/stock-basketball.jpeg);
 }
 
 .football-img {
     background: url(/assets/images/stock-gaa.webp);
-    width: 100%;
-    height: 200vh;
-    z-index: -2;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .rugby-img {
     background: url(/assets/images/stock-rugby.jpg);
-    width: 100%;
-    height: 200vh;
-    z-index: -2;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .tech-img {
     background: url(/assets/images/stock-tech.jpg);
-    width: 100%;
-    height: 200vh;
-    z-index: -2;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .ignore-layer {
@@ -794,14 +775,16 @@ body {
 }
 
 .ach {
-    width: 100%;
-    height: 9%;
+    width: 55%;
+    height: 30%;
     background: blue;
-    margin: 1rem;
-    font-size: 1.4rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    color: white;
+    color: rgb(238, 228, 228);
     display: table;
     padding: 0 1rem;
 }
@@ -810,35 +793,6 @@ body {
     display: table-cell;
     vertical-align: middle;
     transition: all 0.3s ease-in-out;
-}
-
-.grades {
-    height: 55%;
-    width: 100%;
-    color: white;
-    background: #800080;
-    margin: 2rem 0;
-    font-size: 1.8rem;
-    padding-right: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.grades strong {
-    display: block;
-}
-
-.grades ul {
-    padding-top: 1rem;
-}
-
-.grades ul li {
-    list-style: none;
-    border-bottom: 1px solid white;
-    margin-bottom: .4rem;
-}
-
-.grades ul li span {
-    float: right;
 }
 
 .ach:nth-child(1) {
