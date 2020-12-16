@@ -853,24 +853,6 @@ body {
     background: #006064;
 }
 
-span.star::before {
-    color: white;
-    content: '\f005';
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 0.5rem;
-}
-
-span.degree::before {
-    color: white;
-    content: '\f0a3';
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 0.5rem;
-}
-
 /* -------------------------------------------------------------------Media Queries */
 
 /* Checking if device has hover capabilities learned from https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134 */
