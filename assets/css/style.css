@@ -609,18 +609,6 @@ body {
     display: inline-block;
 }
 
-.half-title {
-    font-size: 2.5rem;
-    padding-top: 1rem;
-    text-align: center;
-    color: white;
-    font-family: Nunito, sans-serif;
-    margin: auto;
-    height: 10vh;
-    width: max-content;
-    line-height: 1.2rem;
-}
-
 .half-scroll {
     width: 80%;
     height: 90vh;
@@ -629,10 +617,21 @@ body {
     overflow: hidden;
 }
 
+.placehold {
+    color: white;
+    font-size: 1.8rem;
+    z-index: -5;
+    width: 10rem;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
 .skill-btn-group {
-    width: 20%;
+    position: absolute;
+    width: 10%;
     display: inline-block;
-    margin-top: 5vh;
     z-index: 5;
 }
 
@@ -689,10 +688,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
     left: 50%;
-    top: 15%;
-    height: 30%;
-    width: 60%;
-    font-size: 1.5rem;
+    top: 50%;
+    height: 50%;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 1rem;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease-in-out;
     text-shadow: 2px 2px 4px #000000;
@@ -704,42 +704,42 @@ body {
 
 .basketball-bg {
     background: rgba(243, 202, 19, 0.7);
-    left: 50%;
+    /* left: 50%;
     top: 25%;
     position: absolute;
     height: 70%;
     width: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .football-bg {
     background: rgba(26, 77, 123, 0.7);
-    left: 50%;
+    /* left: 50%;
     top: 25%;
     position: absolute;
     height: 60%;
     width: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .rugby-bg {
     background: rgba(82, 200, 242, 0.7);
-    left: 50%;
+    /* left: 50%;
     top: 25%;
     position: absolute;
     height: 70%;
     width: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .tech-bg {
     background: rgba(243, 202, 19, 0.7);
-    left: 50%;
+    /* left: 50%;
     top: 25%;
     position: absolute;
     height: 70%;
     width: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .skill-img {
@@ -776,7 +776,7 @@ body {
 
 .ach {
     width: 55%;
-    height: 30%;
+    height: 20%;
     background: blue;
     margin: auto;
     margin-top: 1rem;
@@ -876,6 +876,17 @@ body {
         .big-ben-txt:hover ~ .layer .big-ben {
             background-position: 50% 30%;
         }
+
+        .details {
+            top: 40%;
+            height: 80%;
+            width: 80%;
+        }
+
+        .skill-btn-group {
+            width: 15%;
+        }
+
     }
 
 @media screen and (hover: none) and (max-width: 1199px) {
@@ -995,6 +1006,40 @@ body {
         margin: auto;
         display: block;
         clear: both;
+    }
+
+    .skill-btn-group {
+        width: 100%;
+        height: 5rem;
+        top: 0;
+        text-align: center;
+    }
+
+    .skill-btn {
+        width: 20%;
+        margin: .5rem;
+    }
+
+    .ach-half .half-scroll {
+        padding-top: 5rem;
+    }
+
+    .ach {
+        height: 25%;
+    }
+
+    .ach-text i {
+        display: block;
+    }
+
+    .half-scroll {
+        margin-top: 10vh;
+    }
+
+    .details {
+        top: 45%;
+        width: 90%;
+        font-size: 1rem;
     }
 }
 
@@ -1219,6 +1264,44 @@ body {
     .timeline-item {
         width: inherit;
     }
+
+    .skill-btn {
+        margin: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .half-scroll {
+        width: 100%;
+    }
+
+    .half-scroll .layer-group {
+        transform: none;
+    }
+
+    .skill {
+        transform: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .details {
+        width: 90%;
+        font-size: 1rem;
+        height: max-content;
+        transform: none;
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        margin: 5rem .5rem 0 .5rem;
+    }
+
+    .placehold {
+        left: 20%;
+        width: 4rem;
+    }
+
 }
 @media screen and (hover: none) and (max-width: 568px) {
     .big-ben {
@@ -1278,6 +1361,15 @@ body {
         margin-left: 0;
         opacity: 1;
         background: transparent;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .details {
+        margin: 3rem 0.25rem 0 0.25rem;
+        width: 98%;
+        height: max-content;
+        font-size: 0.9rem;
     }
 }
 
