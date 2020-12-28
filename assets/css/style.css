@@ -753,19 +753,19 @@ body {
 }
 
 .basketball-img {
-    background: url(/assets/images/stock-basketball.jpeg);
+    background: url("../images/stock-basketball.jpeg");
 }
 
 .football-img {
-    background: url(/assets/images/stock-gaa.webp);
+    background: url("../images/stock-gaa.webp");
 }
 
 .rugby-img {
-    background: url(/assets/images/stock-rugby.jpg);
+    background: url("../images/stock-rugby.jpg");
 }
 
 .tech-img {
-    background: url(/assets/images/stock-tech.jpg);
+    background: url("../images/stock-tech.jpg");
 }
 
 .ignore-layer {
