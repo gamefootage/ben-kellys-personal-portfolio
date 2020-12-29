@@ -944,6 +944,30 @@ body {
         opacity: 1;
         background: transparent;
     }
+
+    .timeline-4 .timeline-info {
+        background: rgb(7, 17, 43);
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
+
+    .timeline-3 .timeline-info {
+        background: rgb(13, 78, 11);
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
+
+    .timeline-2 .timeline-info {
+        background: rgb(7, 59, 63);
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
+
+    .timeline-1 .timeline-info {
+        background: rgb(104, 53, 6);
+        transition: all 0.6s ease-in-out;
+        padding-top: 2em;
+    }
 }
 
 @media screen and (max-width: 768px) {
