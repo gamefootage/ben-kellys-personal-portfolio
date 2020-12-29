@@ -17,7 +17,7 @@
 </head>
 <body>
 <!-- Parallax Logic learned from https://www.keithclark.co.uk -->
-    <section class="parallax">
+    <div class="parallax">
 
 <!-- Navigation bar -->
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
@@ -54,50 +54,48 @@
         </div>
 
 <!-- Header -->
-        <header id="main-header" class="layer-group header-section">
+        <div id="main-header" class="layer-group header-section">
             <div class="layer backer">
                 <div class="header">Ben Kelly</div>
             </div>
             <div class="layer back">
                 <div class="caption">Personal Portfolio</div>
             </div>
-        </header>
+        </div>
 <!-- END of header -->
 
 <!-- All About Ben Section - A section all about... Ben -->
-        <section id="about-me-section">
-            <div class="about-bg">
-                <span class="about-header text-center">All About Ben</span>
+        <div id="about-me-section" class="about-bg">
+            <span class="about-header text-center">All About Ben</span>
+        </div>
+        <div id="about-me" class="about-section row layer-group">
+            <div class="col-xl-4 col-12 inner-txt lil-ben-txt">
+                <span class="about-txt">My name is Ben Kelly. I was born and raised in the seaside town of Galway, in the West
+                    of Ireland. I am currently 18 years old. I love sports (especially basketball), technology, and Christmas.</span>
             </div>
-            <div id="about-me" class="layer-group about-section row">
-                <div class="col-xl-4 col-12 inner-txt lil-ben-txt">
-                    <span class="about-txt">My name is Ben Kelly. I was born and raised in the seaside town of Galway, in the West
-                        of Ireland. I am currently 18 years old. I love sports (especially basketball), technology, and Christmas.</span>
-                </div>
-                <div class="layer base">
-                    <div class="lil-ben outer-img"><span class="sr-only">Picture of me in Legoland aged 6</span></div>
-                </div>
-                <div class="col-xl-4 col-12 inner-txt middle-ben-txt">
-                    <span class="about-txt">I watch every single sport imaginable and I also play basketball, Gaelic football (a native Irish sport) and rugby. 
-                        I have captained teams in all 3 of those sports and was a starter in each. I have 7 individual awards in all 3.</span>
-                </div>
-                <div class="layer backer">
-                    <div class="middle-ben outer-img"><span class="sr-only">Picture of a me playing basketball</span></div>
-                </div>
-                <div class="col-xl-4 col-12 inner-txt big-ben-txt">
-                    <span class="about-txt col-lg-4 col-sm-12">I work at Stronger Made Ltd., a contracting company based here in Galway. 
-                    I get to work my dream job in technology, and explore my passion for innovation through different programming 
-                    languages and problem solving.</span>
-                </div>
-                <div class="layer back">
-                    <div class="big-ben outer-img"><span class="sr-only">Picture of a me in a suit</span></div>
-                </div>
+            <div class="layer base">
+                <div class="lil-ben outer-img"><span class="sr-only">Picture of me in Legoland aged 6</span></div>
             </div>
-        </section>
+            <div class="col-xl-4 col-12 inner-txt middle-ben-txt">
+                <span class="about-txt">I watch every single sport imaginable and I also play basketball, Gaelic football (a native Irish sport) and rugby. 
+                    I have captained teams in all 3 of those sports and was a starter in each. I have 7 individual awards in all 3.</span>
+            </div>
+            <div class="layer backer">
+                <div class="middle-ben outer-img"><span class="sr-only">Picture of a me playing basketball</span></div>
+            </div>
+            <div class="col-xl-4 col-12 inner-txt big-ben-txt">
+                <span class="about-txt col-lg-4 col-sm-12">I work at Stronger Made Ltd., a contracting company based here in Galway. 
+                I get to work my dream job in technology, and explore my passion for innovation through different programming 
+                languages and problem solving.</span>
+            </div>
+            <div class="layer back">
+                <div class="big-ben outer-img"><span class="sr-only">Picture of a me in a suit</span></div>
+            </div>
+        </div>
 <!-- END of All About Ben section -->
 
 <!-- Skill and Qualifications Section -->
-        <section id="skill" class="skill-ach-section">
+        <div id="skill" class="skill-ach-section">
             <div id="skill-half" class="skill-half">
                 <div class="layer ignore-layer">
                     <div class="basketball-skill basketball-img skill-img collapse" data-parent="#skill"><span class="sr-only">Picture of people plaing basketball</span></div>
@@ -208,7 +206,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 <!-- END of Skill Section -->
 
 <!-- Work Experience Timeline Section -->
@@ -335,6 +333,6 @@
         </footer>
 <!-- END of footer -->
     
-    </section>
+    </div>
 </body>
 </html>
