@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Bebas+Neue&family=Nunito&family=Open+Sans&family=Lobster&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Bebas+Neue&family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
 body {
@@ -15,9 +15,6 @@ body {
         height: 100vh;
         overflow-x: hidden;
         overflow-y: auto;
-        /* perspective-origin: bottom;
-        -webkit-perspective-origin: bottom;
-        -moz-perspective-origin: bottom; */
         scroll-behavior: smooth;
     }
 
@@ -114,13 +111,10 @@ body {
     font-family: 'Julius Sans One';
     color: #fff;
     z-index: 6;
-    -moz-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
 .header-bg {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("../images/portfolio.jpg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(145, 41, 74, 0.8)), url("../images/portfolio.jpg");
     z-index: 6;
     width: 100%;
@@ -139,9 +133,6 @@ body {
     top: 30%;
     width: max-content;
     animation: fadein ease 3s;
-    -moz-animation: fadein ease 3s;
-    -webkit-animation: fadein ease 3s;
-    -o-animation: fadein ease 3s;
     transform: translate(-50%, -50%);
 }
 
@@ -154,17 +145,7 @@ body {
     width: max-content;
     transform: translate(-50%, -50%);
     animation: fadein 1.5s;
-    -moz-animation: fadein 1.5s;
-    -webkit-animation: fadein 1.5s;
-    -o-animation: fadein 1.5s;
     animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-delay: 1.4s;
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-delay: 1.4s;
-    -o-animation-delay: 1.4s;
 }
 
 /* -------------------------------------------------------------------About */
@@ -190,11 +171,10 @@ body {
     font-size: 6rem;
     line-height: 10rem;
     font-weight: bold;
-    background: -webkit-linear-gradient(left, rgb(17, 17, 17), rgb(31, 30, 30));
+    background: linear-gradient(to top, rgb(17, 17, 17), rgb(31, 30, 30));
     background-clip: text;
-    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     position: absolute;
     left: 0;
     right: 0;
@@ -237,7 +217,6 @@ body {
 }
 
 .lil-ben-txt:hover ~ .layer .lil-ben {
-    background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
     background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
     background-position: right;
     background-size: cover;
@@ -257,7 +236,6 @@ body {
 }
 
 .middle-ben-txt:hover ~ .layer .middle-ben {
-    background: -webkit-linear-gradient(to top, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
     background: linear-gradient(to top, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
     background-position: center;
     background-size: cover;
@@ -277,7 +255,6 @@ body {
 }
 
 .big-ben-txt:hover ~ .layer .big-ben {
-    background: -webkit-linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
     background: linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
     background-position: center;
     background-size: cover;
@@ -321,7 +298,6 @@ body {
 }
 
 .work-bg-1 {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(34, 81, 211, 0.8)), url("../images/work-ben-1.jpeg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(34, 81, 211, 0.8)), url("../images/work-ben-1.jpeg");
     z-index: 6;
     width: 100%;
@@ -333,7 +309,6 @@ body {
 }
 
 .work-bg-2 {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(32, 212, 25, 0.8)), url("../images/work-ben-2.jpeg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(32, 212, 25, 0.8)), url("../images/work-ben-2.jpeg");
     z-index: 6;
     width: 100%;
@@ -345,7 +320,6 @@ body {
 }
 
 .work-bg-3 {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(11, 110, 117, 0.8)), url("../images/work-ben-3.jpeg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(11, 110, 117, 0.8)), url("../images/work-ben-3.jpeg");
     z-index: 6;
     width: 100%;
@@ -357,7 +331,6 @@ body {
 }
 
 .work-bg-4 {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, 0.8), rgba(240, 121, 11, 0.8)), url("../images/work-ben-4.jpeg");
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(240, 121, 11, 0.8)), url("../images/work-ben-4.jpeg");
     z-index: 6;
     width: 100%;
@@ -418,7 +391,7 @@ body {
 
 .timeline-info:before {
     content: attr(data-dates);
-    font-family: Exo, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 1em;
     padding: 0;
@@ -475,6 +448,11 @@ body {
 .timeline-info {
     padding: 0 0 2em 2em;
     background: #001318;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.timeline-info h4 {
+    font-weight: bold;
 }
 
 .work-hidden img {
@@ -493,7 +471,7 @@ body {
     max-width: 45%;
     height: 20rem;
     font-size: 1.5rem;
-    font-family: Oswald, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 2rem;
     margin-left: 2rem;
     padding-left: 1rem;
@@ -558,10 +536,7 @@ body {
 /* For instagram background color: https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background */
 .ig {
     background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     color: white;
 }
 
@@ -603,7 +578,6 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    /* text-align: right; */
 }
 
 .skill-half {
@@ -722,42 +696,18 @@ body {
 
 .basketball-bg {
     background: rgba(243, 202, 19, 0.7);
-    /* left: 50%;
-    top: 25%;
-    position: absolute;
-    height: 70%;
-    width: 70%;
-    transform: translate(-50%, -50%); */
 }
 
 .football-bg {
     background: rgba(26, 77, 123, 0.7);
-    /* left: 50%;
-    top: 25%;
-    position: absolute;
-    height: 60%;
-    width: 70%;
-    transform: translate(-50%, -50%); */
 }
 
 .rugby-bg {
     background: rgba(82, 200, 242, 0.7);
-    /* left: 50%;
-    top: 25%;
-    position: absolute;
-    height: 70%;
-    width: 70%;
-    transform: translate(-50%, -50%); */
 }
 
 .tech-bg {
     background: rgba(243, 202, 19, 0.7);
-    /* left: 50%;
-    top: 25%;
-    position: absolute;
-    height: 70%;
-    width: 70%;
-    transform: translate(-50%, -50%); */
 }
 
 .skill-img {
@@ -916,7 +866,6 @@ body {
 
 @media screen and (hover: none) and (max-width: 1199px) {
     .big-ben {
-        background: -webkit-linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background: linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background-position: center;
         background-size: cover;
@@ -928,7 +877,6 @@ body {
     }
 
     .middle-ben {
-        background: -webkit-linear-gradient(to top, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background: linear-gradient(to top, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background-position: center 20%;
         background-size: cover;
@@ -936,7 +884,6 @@ body {
     }
 
     .lil-ben {
-        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
         background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
         background-position: right;
         background-size: cover;
@@ -1072,7 +1019,6 @@ body {
 
 @media screen and (hover: none) and (max-width: 768px) {
     .big-ben {
-        background: -webkit-linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background: linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background-position: center;
         background-size: cover;
@@ -1084,7 +1030,6 @@ body {
     }
 
     .middle-ben {
-        background: -webkit-linear-gradient(to top, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background: linear-gradient(to top, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background-position: center 20%;
         background-size: cover;
@@ -1092,7 +1037,6 @@ body {
     }
 
     .lil-ben {
-        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
         background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
         background-position: right;
         background-size: cover;
@@ -1240,8 +1184,8 @@ body {
 
     .work-hidden img {
         object-fit: cover;
-        height: 18rem;
-        width: 36rem;
+        height: auto;
+        width: 30rem;
         display: block;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -1256,7 +1200,6 @@ body {
 
     .work-hidden ul li {
         font-size: 1.5rem;
-        font-family: Oswald, sans-serif;
         line-height: 3rem;
         margin-left: 1rem;
         padding-left: 1rem;
@@ -1336,7 +1279,6 @@ body {
 }
 @media screen and (hover: none) and (max-width: 568px) {
     .big-ben {
-        background: -webkit-linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background: linear-gradient(to top, rgba(143, 35, 32, 0.8), rgba(28, 29, 31, 0.8)), url("../images/big-ben.jpeg");
         background-position: center;
         background-size: cover;
@@ -1348,7 +1290,6 @@ body {
     }
 
     .middle-ben {
-        background: -webkit-linear-gradient(to top, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background: linear-gradient(to top, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background-position: center 14%;
         background-size: cover;
@@ -1356,7 +1297,6 @@ body {
     }
 
     .lil-ben {
-        background: -webkit-linear-gradient(rgba(202, 51, 202, 0.8), rgba(0, 25, 250, 0.8)), url("../images/lil-ben-1.jpg");
         background: linear-gradient(rgba(202, 51, 202, 0.8), rgba(28, 29, 31, 0.8)), url("../images/lil-ben-1.jpg");
         background-position: right;
         background-size: cover;
@@ -1373,16 +1313,20 @@ body {
     }
 
     .timeline-item .work-hidden {
-    padding-top: 2rem;
-    position: relative;
-    opacity: 1;
-    transition: all 0.6s ease-in-out;
-    visibility: visible;
-    margin-bottom: 0;
-    display: block;
-    padding-bottom: 2rem;
-    padding-left: 0;
-}
+        padding-top: 2rem;
+        position: relative;
+        opacity: 1;
+        transition: all 0.6s ease-in-out;
+        visibility: visible;
+        margin-bottom: 0;
+        display: block;
+        padding-bottom: 2rem;
+        padding-left: 0;
+    }
+
+    .work-hidden img {
+        width: 20rem !important;
+    }
 
     .timeline-info::before {
         left: 2em;
@@ -1413,30 +1357,6 @@ body {
 /* Obtained from stackoverflow: https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
