@@ -1350,7 +1350,7 @@ body {
     .middle-ben {
         background: -webkit-linear-gradient(to top, rgba(223, 209, 22, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
         background: linear-gradient(to top, rgba(147, 173, 31, 0.8), rgba(28, 29, 31, 0.8)), url("../images/middle-ben.jpg");
-        background-position: center 20%;
+        background-position: center 14%;
         background-size: cover;
         transition: all 0.3s ease-in-out;
     }
