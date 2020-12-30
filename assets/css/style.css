@@ -8,8 +8,8 @@ html {
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 body {
@@ -1123,10 +1123,6 @@ header {
 
     .work-title {
         font-size: 4rem;
-    }
-
-    .work-bg {
-        background-attachment: scroll !important;
     }
 
     .timeline-item:hover .work-hidden img {
