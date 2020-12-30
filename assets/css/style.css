@@ -1130,15 +1130,15 @@ body {
         font-size: 4rem;
     }
 
-    #about-me .base {
+    .base {
         transform: none;
     }
 
-    #about-me .back {
+    .back {
         transform: none;
     }
 
-    #about-me .backer {
+    .backer {
         transform: none;
     }
 
