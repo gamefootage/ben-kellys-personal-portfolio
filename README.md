@@ -133,6 +133,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### **Known Issues**
 * Parallax feature won't work on Firefox with semantic tags in sections where layers are used. I made the decision to remove semantic tags and focus on UX (User Experience) and design.
 * Slight glitch when clicking on buttons in skill section where the empty background appears, when switching from one skill to another, for a tenth of a second.
+* On certain mobile devices the footer doesn't appear after scrolling from bottom back to top.
 
 
 ## **Deployment**
