@@ -1030,8 +1030,16 @@ body {
         display: block;
     }
 
-    .half-scroll {
-        margin-top: 10vh;
+    .skill-half {
+        float: left;
+    }
+
+    .ach-half {
+        width: 40%;
+    }
+
+    .skill-half .half-scroll {
+        margin-top: 30%;
     }
 
     .details {
@@ -1266,6 +1274,7 @@ body {
 
     .half-scroll {
         width: 100%;
+        height: 100%;
     }
 
     .half-scroll .layer-group {
@@ -1298,6 +1307,7 @@ body {
 
     .ach {
         font-size: 0.9rem;
+        padding: 0 0.2rem;
     }
 
 }
