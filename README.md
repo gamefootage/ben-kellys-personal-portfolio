@@ -15,7 +15,7 @@ It tells the user all about me, my background, my interests, and my work and wor
 >       5. As a first time user, I would like to see Ben's relevant social media and business related accounts, to determine if they are known and trustworthy.
   
 >    - ### Returning User Goals
->       1. As a returning user, I want to be able to quickly access the relevant part of the site and the information I would like to access.
+>       1. As a returning user, I want to be able to quickly get to the part of the site I need and the information I would like to access.
 >       2. As a returning user, I want to be able to remember how to navigate and use the site with little to no effort.
 >       3. As a returning user, I want to still be impressed at the layout and colour scheme of the site.
 >       4. As a returning user, I want to be able to quickly access Ben's social links if I have forgotten or misplaced them.
@@ -29,15 +29,15 @@ It tells the user all about me, my background, my interests, and my work and wor
 >    - ### Recruitment Agent Goals
 >       1. As a recruitment agent, I would like to be able to navigate to the information about Ben that shows he is capable of doing the job I am trying to allocate to him.
 >       2. As a recruitment agent, I would like to be able to show this site to the company that is using me as a medium as evidence of the work Ben can do.
->       3. As a recruitment agent, I would like to be able to find easily and clearly Ben's skills and work history, to show to companys looking to employ.
->       4. As a recruitment agent, I would like relvant links to Ben's accounts for myself and the company hiring to determine Ben's reliability and trustworthiness.
+>       3. As a recruitment agent, I would like to be able to find easily and clearly Ben's skills and work history, to show to companyies looking to employ.
+>       4. As a recruitment agent, I would like relevant links to Ben's accounts for myself and the company hiring to determine Ben's reliability and trustworthiness.
 
 - ## Design
    - ### **Colour Scheme**
       * The main background colour of the site is a slate gray (#2c2c2c).
       * The other main colours are red, yellow, blue and green.
-      * The gradients on images are of the main colour varities moving from bottom to top getting darker as it rises.
-      * The colours in the skill section buttons are taken from the logos of the teams I played on of the sport buttons and CodeInstitute red for the technology button.
+      * The gradients on images are of the main colour variaties moving from bottom to top getting darker as it rises.
+      * The colours in the skill section buttons are taken from the logos of the teams I played on for the sport buttons and CodeInstitute red for the technology button.
     - ### **Typography**
       * The main fonts I use are Bebas Neue, Julius Sans One, and Source Sans Pro, I got them from [Google Fonts](https://fonts.google.com).
       * Source Sans Pro is a clean sans-serif typeface, I like it's readability in small font sizes, whereas Bebas Neue and Julius Sans One is better in larger sizes. Bebas Neue I use for section headers, and Julius Sans One for medium size text. My fallback font is sans-serif.
@@ -47,11 +47,11 @@ It tells the user all about me, my background, my interests, and my work and wor
 ## **Features**
 ### Existing Features
 - The site incorporates what is known as parallax scrolling. This is where elements are scrolling at different speeds to create a 3D effect.
-- The navigation bar is fixed at the top of the page, on screens smaller than 1200px it becomes a collapsible and has a burger icon to toggle it.
+- The navigation bar is fixed at the top of the page, on screens smaller than 1200px it becomes collapsable and has a burger icon to toggle it.
 - The "About" section uses 3 images at different points on the Z axis that, when hovered on, reveal paragraphs relevant to the photo of me.
-- The skill section has 4 buttons for different areas of skill I have (basketball, Gaelic football, rugby, and technology). When these buttons are pressed they display the information relevant to the subject, pressing ones deacivates the others.
-- The work experience timeline shows all the jobs I've had and the period I worked them, when hovered on they reveal more information about the subsequent job.
-- Lastly the fixed footer at the bottom has links to my [Facebook](https://www.facebook.com/ben.kelly.7509), [LinkedIn](https://www.linkedin.com/in/ben-kelly-a36b001b2/), [Instagram](https://www.instagram.com/benkelly___/), [GitHub](https://github.com/gamefootage), a ["mailto" link](mailto:benskelly10@gmail.com), a [WhatsApp link](https://wa.me/353852030033), and a [Google map link](https://goo.gl/maps/LJCFoNLXqws8qawE8) of Galway, Ireland.
+- The skill section has 4 buttons for different areas of skill I have (basketball, Gaelic football, rugby, and technology). When these buttons are pressed they display the information relevant to the subject, pressing ones deactivates the others.
+- The work experience timeline shows all the jobs I've had and the periods I worked in them, when hovered on they reveal more information about the subsequent job.
+- Lastly the fixed footer at the bottom has links to my [Facebook](https://www.facebook.com/ben.kelly.7509), [LinkedIn](https://www.linkedin.com/in/ben-kelly-a36b001b2/), [Instagram](https://www.instagram.com/benkelly___/), [GitHub](https://github.com/gamefootage), a ["mailto" link](benskelly10@gmail.com), a [WhatsApp link](https://wa.me/353852030033), and a [Google map link](https://goo.gl/maps/LJCFoNLXqws8qawE8) of Galway, Ireland.
 
 ### Possible Future Features
 - Having a portfolio section of the site with all my future projects, with a demo of each and a link to each project as well.
@@ -60,10 +60,10 @@ It tells the user all about me, my background, my interests, and my work and wor
 
 ## **Technologies Used**
 - [**Bootstrap 4.0**](https://getbootstrap.com/docs/4.0/getting-started/introduction/)  
-  - Bootstrap CSS allows for ease in responsive sizing and compononents such as nav bars and collapsible elements.
+  - Bootstrap CSS allows for ease in responsive sizing and compononents such as nav bars and collapsable elements.
   - Using Bootstrap JS allowed me to make the skill section buttons show and hide information and make the nav bar expandable on small devices.
 - [**Font Awesome**](https://fontawesome.com/)
-    - Using Font Awesomes provided link tag I could use their icons on the buttons in the skill section and for my footer links.
+    - Using Font Awesome's provided link tag I could use their icons on the buttons in the skill section and for my footer links.
     >     <link rel="stylesheet" href="https://use.fontawesome.coreleases/v5.13.0/css/all.css">
 - [**Stack Overflow**](https://stackoverflow.com/)
     - Many of the questions I had during the creation of this site had already been asked and answered on stack overflow, I found it a great tool to solve many problems I had.
@@ -107,7 +107,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   
 - ### Potential Employer Goals
     * As a potential employer, I want to get enough information about Ben so that I feel like I have already interviewed him briefly.
-         * The about section displays brief information on my upbrining interests, and current job.
+         * The about section displays brief information on my upbrining, interests, and current job.
          * The skill section dives more thoroughly into my interests and what I've done in those areas.
          * The work section gives a complete timeline on my work history and the details of each job.      
     * As a potential employer, I want to see Ben's skills, not just in the area I am employing him from, to see if his work rate translates across multiple interests and if he is at a high level in everything he does.
@@ -116,7 +116,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     * As a potential employer, I want to know where Ben has worked before, if his responsibilities there were of importance to the business, and if he has a good work ethic.
          * The work history timeline shows exactly where I've worked before and what I've done at each place of work.
     * As a potential employer, I want methods of contacting Ben and seeing the social accounts he has, and the projects he's worked on.
-         * The fixed footer contains an email an WhatsApp link as a way of contacting me.
+         * The fixed footer contains an email, and WhatsApp, link as a way of contacting me.
          * My GitHub link is also there to show off any public projects I have worked on, and my LinkedIn will provide greater details on projects done for other companies.
   
 - ### Recruitment Agent Goals
@@ -125,10 +125,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     * As a recruitment agent, I would like to be able to show this site to the company that is using me as a medium as evidence of the work Ben can do.
          * This site is deployed on GitHub Pages and is easy to share a link to others if necessary.
          * The cross browser and device support allows the recruitment agent to not worry what technology the employer may be using.
-    * As a recruitment agent, I would like to be able to find easily and clearly Ben's skills and work history, to show to companys looking to employ.
+    * As a recruitment agent, I would like to be able to find easily and clearly Ben's skills and work history, to show to companies looking to employ.
          * The navigation bar has clear buttons for easy navigation to those sections.
          * When clicking the navigation links the page lines up to display the section without any other scrolling necessary.
-    * As a recruitment agent, I would like relvant links to Ben's accounts for myself and the company hiring to determine Ben's reliability and trustworthiness.
+    * As a recruitment agent, I would like relevant links to Ben's accounts for myself and the company hiring to determine Ben's reliability and trustworthiness.
          * The fixed footer displays the relevant links beautifully and succinctly, opening in a new tab and easy to copy to one's clipboard.
 
 ### **Further Testing**
