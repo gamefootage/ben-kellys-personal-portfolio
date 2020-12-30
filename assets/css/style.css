@@ -146,6 +146,7 @@ body {
     transform: translate(-50%, -50%);
     animation: fadein 1.5s;
     animation-fill-mode: both;
+    animation-delay: 1.5s;
 }
 
 /* -------------------------------------------------------------------About */
