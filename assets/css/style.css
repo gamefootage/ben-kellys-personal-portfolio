@@ -1121,6 +1121,13 @@ body {
     }
 }
 
+@media screen and (max-width: 576px) {
+    footer .address {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 @media screen and (max-width: 568px) {
     .caption {
         top: 70%;
