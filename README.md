@@ -40,7 +40,7 @@ It tells the user all about me, my background, my interests, and my work and wor
       * The colours in the skill section buttons are taken from the logos of the teams I played on of the sport buttons and CodeInstitute red for the technology button.
     - ### **Typography**
       * The main fonts I use are Bebas Neue, Julius Sans One, and Source Sans Pro, I got them from [Google Fonts](https://fonts.google.com).
-      * Source Sans Pro is a simple form of the sans-serif font, I like it's readability in small font sizes, whereas Bebas Neue and Julius Sans One is better in larger sizes. Bebas Neue I use for section headers, and Julius Sans One for medium size text. My fallback font is sans-serif.
+      * Source Sans Pro is a clean sans-serif typeface, I like it's readability in small font sizes, whereas Bebas Neue and Julius Sans One is better in larger sizes. Bebas Neue I use for section headers, and Julius Sans One for medium size text. My fallback font is sans-serif.
 
 
 - ## [**Wireframe** (note that tablet layout is the same as mobile)](https://wireframepro.mockflow.com/view/M001cd26c723c36ed609942092aed0a071607105289735)
@@ -76,7 +76,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - [W3C Markup Validator](https://validator.w3.org/) - [Results](./docs/markup-validator-results.png)
    - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)*
      
-***Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). Other browsers accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari.
+***Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). Other browsers accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it.
 
 ### **Tesing User stories from User Experience Section**
  - ### First Time User Goals
