@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Bebas+Neue&family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
-/* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
+/* Rules to fix mobile footer not showing properly (obtained from https://stackoverflow.com/questions/25241593/sticky-footer-not-totaly-in-the-bottom-on-a-mobile-devices) */
+
 html {
     position: relative;
     min-height: 100%;
@@ -19,6 +20,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
 
 @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     .parallax {
