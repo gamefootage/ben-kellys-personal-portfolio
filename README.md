@@ -56,6 +56,7 @@ It tells the user all about me, my background, my interests, and my work and wor
 ### Possible Future Features
 - Having a portfolio section of the site with all my future projects, with a demo of each and a link to each project as well.
 - Having a recommendations section full of reviews and comments from other people on my work and character.
+- Having an education button in the skills/achievements section once I have attained more diplomas/degrees.
 
 ## **Technologies Used**
 - [**Bootstrap 4.0**](https://getbootstrap.com/docs/4.0/getting-started/introduction/)  
