@@ -77,7 +77,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
  - ### First Time User Goals
     * As a first time user, I want to be presented with an eye-catching, yet understandable, layout and colour scheme, when first opening the site.
       
-         * On loading the site, users are presented with a large image of. The main and sub text is faded in.
+         * On loading the site, users are presented with a large image of me. The main and sub text is faded in.
          * The navigation bar is fixed to the top with clear and distinct words relating to the 4 relevant sections.
          * The user can either scroll down through the site or click one of the [navigation buttons](./docs/navbar.png), to direct them to the relevant section.
          * At the bottom of the page is a [fixed footer](./docs/footer.png) with relevant social and contact links with colours taken from each company's logo and white for email. There is also a map link for where I am living, Galway, Ireland.
@@ -131,7 +131,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * The website was tested on multiple devices and screen widths using browser developer tools, and actual devices (Samsung A21, iPhone 7, iPad Pro, Macbook Pro, Windows 10 PC, Moto G7 Power).
 
 ### **Known Issues**
-* Parallax feature won't work on Firefox with sematic tags in sections where layers are used. I made the decision to remove semantic tags and focus on UX (User Experience) and design.
+* Parallax feature won't work on Firefox with semantic tags in sections where layers are used. I made the decision to remove semantic tags and focus on UX (User Experience) and design.
 * Slight glitch when clicking on buttons in skill section where the empty background appears, when switching from one skill to another, for a tenth of a second.
 
 
