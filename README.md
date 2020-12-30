@@ -76,7 +76,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - [W3C Markup Validator](https://validator.w3.org/) - [Results](./docs/markup-validator-results.png)
    - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)*
      
-***Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). Other browsers accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it.
+***Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). All browsers, bar Internet Explorer, accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it.
 
 ### **Tesing User stories from User Experience Section**
  - ### First Time User Goals

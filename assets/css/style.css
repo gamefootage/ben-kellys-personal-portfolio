@@ -6,8 +6,6 @@ body {
     padding: 0;
 }
 
-
-
 @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     .parallax {
         background: #2c2c2c;
@@ -52,8 +50,81 @@ body {
     }
 }
 
+/* Method for determining if a user is using Internet Explorer 10+ as a browser, as parallax doesn't work on it */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1032;
+    }
 
+    .footer {
+        position: fixed;
+        height: 3rem !important;
+    }
 
+    .header-section {
+        transform: none !important;
+    }
+
+    .header-bg {
+        background-attachment: scroll !important;
+        height: 100vh !important;
+    }
+
+    #main-header {
+        position: absolute !important;
+        top: 0 !important;
+        height: 100vh;
+        width: 100%;
+        background: transparent;
+    }
+
+    .about-header {
+        background: none !important;
+        color: white !important;
+    }
+
+    .about-section {
+        height: 98vh;
+        width: 100%;
+    }
+   
+    .lil-ben,
+    .middle-ben,
+    .big-ben {
+        top: auto !important;
+        transform: none !important;
+        width: 33.333% !important;
+        height: 100% !important;
+    }
+
+    .middle-ben {
+        left: 33.333% !important;
+    }
+
+    .big-ben {
+        left: 66.6667% !important;
+    }
+    
+    .skill-img {
+        position: absolute;
+        top: auto;
+        left: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 0;
+        background-attachment: scroll !important; 
+    }
+
+    .timeline-1 {
+        margin-bottom: 3rem !important;
+    }
+
+    .work-hidden img {
+        width: auto !important;
+    }
+}
 
 /* -------------------------------------------------------------------Header */
 
@@ -717,24 +788,27 @@ body {
     z-index: -2;
     background-size: cover !important;
     background-position: top !important;
-    background-attachment: fixed !important;
     background-repeat: no-repeat !important;
 }
 
 .basketball-img {
     background: url("../images/stock-basketball.jpeg");
+    background-attachment: fixed;
 }
 
 .football-img {
     background: url("../images/stock-gaa.webp");
+    background-attachment: fixed;
 }
 
 .rugby-img {
     background: url("../images/stock-rugby.jpg");
+    background-attachment: fixed;
 }
 
 .tech-img {
     background: url("../images/stock-tech.jpg");
+    background-attachment: fixed;
 }
 
 .ignore-layer {
