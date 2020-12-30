@@ -35,8 +35,8 @@ It tells the user all about me, my background, my interests, and my work and wor
 - ## Design
    - ### **Colour Scheme**
       * The main background colour of the site is a slate gray (#2c2c2c).
-      * The other main colours are variations of red, yellow, blue and green.
-      * The gradients on images are of the main colour varities moving from bottom to top getting lighter as it rises.
+      * The other main colours are red, yellow, blue and green.
+      * The gradients on images are of the main colour varities moving from bottom to top getting darker as it rises.
       * The colours in the skill section buttons are taken from the logos of the teams I played on of the sport buttons and CodeInstitute red for the technology button.
     - ### **Typography**
       * The main fonts I use are Bebas Neue, Julius Sans One, and Source Sans Pro, I got them from [Google Fonts](https://fonts.google.com).
