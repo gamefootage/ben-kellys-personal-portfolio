@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Bebas+Neue&family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 body {
+    background: rgb(230, 230, 220);
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -972,6 +986,13 @@ header {
             margin-top: 20%;
         }
 
+        .address {
+            line-height: 7vh;
+        }
+
+        footer .address a span {
+            display: none;
+        }
     }
 
 @media screen and (hover: none) and (max-width: 1199px) {
@@ -1227,12 +1248,6 @@ header {
         margin-left: 0;
         opacity: 1;
         background: transparent;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    footer .address {
-        display: none;
     }
 }
 
