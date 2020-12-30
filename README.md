@@ -163,13 +163,13 @@ The project was deployed to GitHub Pages using the following steps...
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/gamefootage/ben-kellys-personal-portfolio)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/gamefootage/ben-kellys-personal-portfolio).
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/gamefootage/ben-kellys-personal-portfolio).
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -205,5 +205,5 @@ The images of me were taken from my phone. The stock photos were taken from [Pex
 - [**Ignatius Ukwuoma**](https://www.linkedin.com/in/ignatiusukwuoma/)
   > Ignatius was the mentor assigned to me by CodeInstitute, he helped me realise my full potential and gave me valuable information at the beginning and middle of my project.
 
-- [**Aaron Sinnot**](https://www.linkedin.com/in/aaronsinnott/)
+- [**Aaron Sinnott**](https://www.linkedin.com/in/aaronsinnott/)
   > Aaron was assigned to me as a temporary mentor at the end of my project when Ignatius was unavailable, he reviewed all the work I had done, helped me clean up my work to ensure it was all presentable and ensured I was ready for my deadline date.
