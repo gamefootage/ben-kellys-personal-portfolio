@@ -172,7 +172,7 @@ body {
     font-size: 6rem;
     line-height: 10rem;
     font-weight: bold;
-    background: linear-gradient(to top, rgb(17, 17, 17), rgb(31, 30, 30));
+    background: linear-gradient(to top, rgb(65, 65, 65), rgb(31, 30, 30));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
