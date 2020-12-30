@@ -741,6 +741,10 @@ header {
     color: white;
 }
 
+.skill-btn[aria-expanded=true] {
+    color: black;
+}
+
 .skill-btn i {
     font-size: 2rem;
     display: block;
