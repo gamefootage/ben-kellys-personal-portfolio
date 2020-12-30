@@ -385,7 +385,6 @@ header {
     z-index: 6;
     background: #2c2c2c;
     overflow: hidden;
-    margin-bottom: 6vh;
 }
 
 .work-header {
@@ -589,6 +588,18 @@ header {
     padding-left: 1rem;
     list-style-type: square;
 }
+
+.timeline-1 {
+    margin-bottom: 6vh;
+}
+
+ /* Media Query to check if Firefox
+ (obtained from https://stackoverflow.com/questions/31036150/firefox-specific-media-queries */
+@-moz-document url-prefix() {
+  .timeline-1 {
+    margin-bottom: 0 !important;
+  }
+}  
 
 /* -------------------------------------------------------------------Contact Footer */
 
