@@ -142,6 +142,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * Slight glitch when initially clicking on buttons in skill section where the image takes a few seconds to load.
 * Wesbite doesn't function on IE <= version 9.
 * On IE 10+ the Gaelic Football stock image fails to load and browser doesn't support 'object-fit: cover' so work images are at different widths to avoid stretching, and background images for the hidden section are now just gray.
+* On some Android versions of Chrome the background-attachment of fixed looks glitchy and broken.
+* On mobile devices viewport height changes depending on browser overlay causing height and width problems in some elements. If I could use JavaScript I could solve these mobile problems quite easily.
 
 
 

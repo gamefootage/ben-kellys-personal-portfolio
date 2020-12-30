@@ -587,14 +587,6 @@ header {
     margin-bottom: 6vh;
 }
 
- /* Media Query to check if Firefox
- (obtained from https://stackoverflow.com/questions/31036150/firefox-specific-media-queries */
-@-moz-document url-prefix() {
-  .timeline-1 {
-    margin-bottom: 0 !important;
-  }
-}  
-
 /* -------------------------------------------------------------------Contact Footer */
 
 .footer {
