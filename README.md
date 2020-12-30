@@ -184,16 +184,16 @@ Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 All content was written by the developer.
 
 ### Images*
-The images of me were found on my phone or my mother's Facebook. The photos of older (and fake) me in a suit, as well as other stock photos were taken from [Pexels](https://www.pexels.com/), [The Sun](https://www.thesun.ie), [OTB Sports](https://www.otbsports.com), [Basketball Ireland](https://www.basketballireland.ie), and [WikiQuote](https://simple.wikiquote.org).
+The images of me were taken from my phone. The stock photos were taken from [Pexels](https://www.pexels.com/), [The Sun](https://www.thesun.ie), [OTB Sports](https://www.otbsports.com), [Basketball Ireland](https://www.basketballireland.ie), and [WikiQuote](https://simple.wikiquote.org).
 
 ***Note:** This project is for educational purposes and any images used are not subject to copyright claims.
 
 ### Acknowledgemnts
 - [**Keith Clark**](https://keithclark.co.uk/)
-  > Parallax scrolling is a modern website design aspect with increasing popularity. It was something I wanted to implement in my project without JavaScript and [Keith's article](https://keithclark.co.uk/articles/pure-css-parallax-websites/) came to my rescue with detailed information on how to do pure CSS parallax.
+  > Parallax scrolling is a modern website design aspect with increasing popularity. It was something I wanted to implement in my project without JavaScript, and [Keith's article](https://keithclark.co.uk/articles/pure-css-parallax-websites/) came to my rescue with detailed information on how to do pure CSS parallax.
 
 - [**Ignatius Ukwuoma**](https://www.linkedin.com/in/ignatiusukwuoma/)
-  > Ignatius was the mentor assigned to me by CodeInstitute, he helped me realise the work I initially presented to him was not up to standard and gave me valuable information at the beginning and middle of my project.
+  > Ignatius was the mentor assigned to me by CodeInstitute, he helped me realise my full potential and gave me valuable information at the beginning and middle of my project.
 
 - [**Aaron Sinnot**](https://www.linkedin.com/in/aaronsinnott/)
   > Aaron was assigned to me as a temporary mentor at the end of my project when Ignatius was unavailable, he reviewed all the work I had done, helped me clean up my work to ensure it was all presentable and ensured I was ready for my deadline date.
