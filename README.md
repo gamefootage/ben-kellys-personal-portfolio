@@ -74,9 +74,11 @@ It tells the user all about me, my background, my interests, and my work and wor
 ### **Validators**
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
    - [W3C Markup Validator](https://validator.w3.org/) - [Results](./docs/markup-validator-results.png)
-   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)*
+   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)**
      
-***Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). All browsers, bar Internet Explorer, accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it.
+***Note:** Section does have a header (h2) but it is just outside the section to account for parallax effect.
+
+****Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). All browsers, bar Internet Explorer, accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it.
 
 ### **Tesing User stories from User Experience Section**
  - ### First Time User Goals
