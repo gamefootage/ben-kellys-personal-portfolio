@@ -266,6 +266,7 @@ body {
     pointer-events: all;
     display: table;
     text-align: center;
+    cursor: pointer;
 }
 
 .about-txt {
