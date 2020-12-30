@@ -53,6 +53,10 @@ It tells the user all about me, my background, my interests, and my work and wor
 - The work experience timeline shows all the jobs I've had and the period I worked them, when hovered on they reveal more information about the subsequent job.
 - Lastly the fixed footer at the bottom has links to my [Facebook](https://www.facebook.com/ben.kelly.7509), [LinkedIn](https://www.linkedin.com/in/ben-kelly-a36b001b2/), [Instagram](https://www.instagram.com/benkelly___/), [GitHub](https://github.com/gamefootage), a ["mailto" link](mailto:benskelly10@gmail.com), a [WhatsApp link](https://wa.me/353852030033), and a [Google map link](https://goo.gl/maps/LJCFoNLXqws8qawE8) of Galway, Ireland.
 
+### Possible Future Features
+- Having a portfolio section of the site with all my future projects, with a demo of each and a link to each project as well.
+- Having a recommendations section full of reviews and comments from other people on my work and character.
+
 ## **Technologies Used**
 - [**Bootstrap 4.0**](https://getbootstrap.com/docs/4.0/getting-started/introduction/)  
   - Bootstrap CSS allows for ease in responsive sizing and compononents such as nav bars and collapsible elements.
