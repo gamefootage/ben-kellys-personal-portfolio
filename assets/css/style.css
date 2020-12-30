@@ -590,6 +590,7 @@ header {
 /* -------------------------------------------------------------------Contact Footer */
 
 .footer {
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     background: white;
