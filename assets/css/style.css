@@ -1123,8 +1123,7 @@ body {
 
 @media screen and (max-width: 576px) {
     footer .address {
-        position: absolute;
-        bottom: 0;
+        display: none;
     }
 }
 
