@@ -2,7 +2,7 @@
 
 [Live project can be viewed here.](https://gamefootage.github.io/ben-kellys-personal-portfolio/)
 ## **Overview**
-My project is a portfolio for myself, Ben Kelly, that essentially displays the information found on my [CV](./assets\docs\ben-kelly-cv-sept-2020.pdf) in a creative way through the means of this webpage.  
+My project is a portfolio for myself, Ben Kelly, that essentially displays the information found on my [CV](./assets\documents\ben-kelly-cv-sept-2020.pdf) in a creative way through the means of this webpage.  
 It tells the user all about me, my background, my interests, and my work and work history. It portrays an accurate and positive view of me and my life.
 ## **User Experience**
 
