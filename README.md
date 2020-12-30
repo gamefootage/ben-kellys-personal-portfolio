@@ -139,7 +139,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * The website was tested on multiple devices and screen widths using browser developer tools, and actual devices (Samsung A21, iPhone 7, iPad Pro, Macbook Pro, Windows 10 PC, Moto G7 Power).
 
 ### **Known Issues**
-* Parallax feature won't work on Firefox with semantic tags in sections where layers are used. I made the decision to remove semantic tags and focus on UX (User Experience) and design.
 * Slight glitch when initially clicking on buttons in skill section where the image takes a few seconds to load.
 * Wesbite doesn't function on IE <= version 9.
 * On IE 10+ the Gaelic Football stock image fails to load and browser doesn't support 'object-fit: cover' so work images are at different widths to avoid stretching, and background images for the hidden section are now just gray.
