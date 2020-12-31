@@ -78,98 +78,6 @@ body::after {
     }
 }
 
-/* Method for determining if a user is using Internet Explorer 10+ as a browser, as parallax doesn't work on it */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    html,
-    body {
-        overflow: auto;
-    }
-
-    .navbar {
-        position: fixed;
-        width: 100%;
-        z-index: 1032;
-    }
-
-    .footer {
-        position: fixed;
-        height: 3rem !important;
-    }
-
-    .header-section {
-        transform: none !important;
-    }
-
-    .header-bg {
-        background-attachment: scroll !important;
-        height: 100vh !important;
-    }
-
-    #main-header {
-        position: absolute !important;
-        top: 0 !important;
-        height: 100vh;
-        width: 100%;
-        background: transparent;
-    }
-
-    .about-header {
-        background: none !important;
-        color: white !important;
-    }
-
-    .about-section {
-        height: 98vh;
-        width: 100%;
-    }
-   
-    .lil-ben,
-    .middle-ben,
-    .big-ben {
-        top: auto !important;
-        transform: none !important;
-        width: 33.333% !important;
-        height: 100vh !important;
-    }
-
-    .middle-ben {
-        left: 33.333% !important;
-    }
-
-    .big-ben {
-        left: 66.6667% !important;
-    }
-
-    .skill-ach-section {
-        background: #2c2c2c;
-        z-index: 0;
-    }
-
-    .ignore-layer {
-        position: absolute;
-        width: 100%;
-        pointer-events: none;
-    }
-    
-    .skill-img {
-        position: absolute;
-        top: auto;
-        left: 0;
-        width: 100% !important;
-        height: 100vh !important;
-        z-index: 0;
-        background-attachment: scroll !important; 
-    }
-
-    .timeline-1 {
-        margin-bottom: 3rem !important;
-    }
-
-    .work-hidden img {
-        width: auto !important;
-    }
-}
-
 /* -------------------------------------------------------------------Header */
 
 .navbar.bg-dark {
@@ -1548,6 +1456,98 @@ header {
         top: 5%;
         width: 94%;
         left: 3%;
+    }
+}
+
+/* Method for determining if a user is using Internet Explorer 10+ as a browser, as parallax doesn't work on it */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    html,
+    body {
+        overflow: auto;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1032;
+    }
+
+    .footer {
+        position: fixed;
+        height: 3rem !important;
+    }
+
+    .header-section {
+        transform: none !important;
+    }
+
+    .header-bg {
+        background-attachment: scroll !important;
+        height: 100vh !important;
+    }
+
+    #main-header {
+        position: absolute !important;
+        top: 0 !important;
+        height: 100vh;
+        width: 100%;
+        background: transparent;
+    }
+
+    .about-header {
+        background: none !important;
+        color: white !important;
+    }
+
+    .about-section {
+        height: 98vh;
+        width: 100%;
+    }
+   
+    .lil-ben,
+    .middle-ben,
+    .big-ben {
+        top: auto !important;
+        transform: none !important;
+        width: 33.333% !important;
+        height: 100vh !important;
+    }
+
+    .middle-ben {
+        left: 33.333% !important;
+    }
+
+    .big-ben {
+        left: 66.6667% !important;
+    }
+
+    .skill-ach-section {
+        background: #2c2c2c;
+        z-index: 0;
+    }
+
+    .ignore-layer {
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+    }
+    
+    .skill-img {
+        position: absolute;
+        top: auto;
+        left: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 0;
+        background-attachment: scroll !important; 
+    }
+
+    .timeline-1 {
+        margin-bottom: 3rem !important;
+    }
+
+    .work-hidden img {
+        width: auto !important;
     }
 }
 
