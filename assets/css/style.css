@@ -1519,10 +1519,23 @@ header {
         padding-top: 0;
     }
 
+    .ach-half .half-scroll {
+        margin-top: 20%;
+    }
+
     .ach {
-        display: inline-table;
+        display: inline-block;
         height: 44%;
         width: 32%;
+        position: relative;
+    }
+
+    .ach-text {
+        display: inline-grid;
+        position: absolute;
+        top: 22%;
+        width: 94%;
+        left: 3%;
     }
 }
 
