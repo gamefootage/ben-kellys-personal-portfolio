@@ -80,6 +80,11 @@ body::after {
 
 /* Method for determining if a user is using Internet Explorer 10+ as a browser, as parallax doesn't work on it */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    html,
+    body {
+        overflow: auto;
+    }
+
     .navbar {
         position: fixed;
         width: 100%;
