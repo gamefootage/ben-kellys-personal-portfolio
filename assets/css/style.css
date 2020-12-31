@@ -1559,6 +1559,12 @@ header {
     }
 }
 
+@media all and (max-width: 568px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .work-hidden img {
+        width: 30rem !important;
+    }
+}
+
 /* -------------------------------------------------------------------Keyframe Animations */
 
 /* Obtained from stackoverflow
