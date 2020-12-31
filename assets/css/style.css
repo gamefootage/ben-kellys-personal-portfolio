@@ -32,7 +32,7 @@ body::after {
 
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
 
-@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+@supports ((perspective: 1px)) {
     
     .parallax {
         background: #2c2c2c;
