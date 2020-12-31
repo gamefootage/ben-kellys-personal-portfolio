@@ -1543,7 +1543,7 @@ header {
     .work-hidden img {
         width: auto !important;
     }
-    
+
 }
 
 @media all and (max-width: 1199px), (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1551,6 +1551,11 @@ header {
         height: 33.333vh !important;
         width: 100% !important;
         display: block;
+        left: 0 !important;
+    }
+
+    .inner-txt {
+        left: 3%;
     }
 }
 
