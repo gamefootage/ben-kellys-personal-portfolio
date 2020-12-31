@@ -129,7 +129,7 @@ body::after {
         top: auto !important;
         transform: none !important;
         width: 33.333% !important;
-        height: 100% !important;
+        height: 100vh !important;
     }
 
     .middle-ben {
