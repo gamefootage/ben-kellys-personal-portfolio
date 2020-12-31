@@ -678,6 +678,10 @@ header {
 
 /* -------------------------------------------------------------------Skill And Achievments */
 
+.loader-img {
+    display: none;
+}
+
 .skill-ach-section {
     height: 100vh;
     width: 100%;

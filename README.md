@@ -78,7 +78,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
      
 ***Note:** Section does have a header (h2) but it is just outside the section to account for parallax effect.
 
-****Note:** Mozilla themselves state that text is a valid value of background-clip [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip). All browsers, bar Internet Explorer, accept the text value of -webkit-background-clip. Also -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it. [-ms-high-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-ms-high-contrast) is a vendor extension used in Internet Explorer and it is only used to see if the user has Internet Explorer as their browser.
+****Note:** -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it. [-ms-high-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-ms-high-contrast) is a vendor extension used in Internet Explorer and it is only used to see if the user has Internet Explorer as their browser.
 
 ### **Tesing User stories from User Experience Section**
  - ### First Time User Goals
