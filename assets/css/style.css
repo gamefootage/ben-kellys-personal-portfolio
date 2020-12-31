@@ -1196,12 +1196,6 @@ header {
         padding: 0;
     }
 
-    .outer-img {
-        height: 33.333%;
-        width: 100%;
-        display: block;
-    }
-
     .about-txt {
         font-size: 1rem;
     }
@@ -1548,6 +1542,13 @@ header {
 
     .work-hidden img {
         width: auto !important;
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .outer-img {
+            height: 33.333vh;
+            width: 100%;
+        }
     }
 }
 
