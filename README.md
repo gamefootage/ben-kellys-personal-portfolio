@@ -74,11 +74,9 @@ It tells the user all about me, my background, my interests, and my work and wor
 ### **Validators**
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
    - [W3C Markup Validator](https://validator.w3.org/) - [Results](./docs/markup-validator-results.png)
-   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)**
-     
-***Note:** Section does have a header (h2) but it is just outside the section to account for parallax effect.
+   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./docs/css-validator-results.png)*
 
-****Note:** -webkit-overflow-scrolling is used on iOS Safari, as described on [Mozilla's article](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling) on it. [Here](./docs/safari-overflow-scrolling.png) is a screenshot of the compatability of it. [-ms-high-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-ms-high-contrast) is a vendor extension used in Internet Explorer and it is only used to see if the user has Internet Explorer as their browser.
+***Note:** [-ms-high-contrast](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-ms-high-contrast) is a vendor extension used in Internet Explorer and it is only used to see if the user has Internet Explorer as their browser.
 
 ### **Tesing User stories from User Experience Section**
  - ### First Time User Goals
