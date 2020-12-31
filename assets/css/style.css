@@ -844,21 +844,25 @@ header {
 .basketball-img {
     background: url("../images/stock-basketball.jpeg");
     background-attachment: fixed;
+    background-color: rgb(243, 202, 19);
 }
 
 .football-img {
     background: url("../images/stock-gaa.webp");
     background-attachment: fixed;
+    background-color: rgb(26, 77, 123);
 }
 
 .rugby-img {
     background: url("../images/stock-rugby.jpg");
     background-attachment: fixed;
+    background-color: rgb(82, 200, 242);
 }
 
 .tech-img {
     background: url("../images/stock-tech.jpg");
     background-attachment: fixed;
+    background-color: rgb(243, 202, 19);
 }
 
 .ignore-layer {
