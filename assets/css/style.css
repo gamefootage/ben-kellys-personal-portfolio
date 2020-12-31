@@ -20,6 +20,16 @@ body {
     padding: 0;
 }
 
+/* -------------------------------------------------------------------Image Preloader */
+
+/* Obtained from stackoverflow
+(https://stackoverflow.com/questions/1373142/preloading-css-images) */
+
+body::after {
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+   content: url("../images/stock-basketball.jpeg") url("../images/stock-gaa.webp") url("../images/stock-rugby.jpg") url("../images/stock-tech.jpg");
+}
+
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
 
 @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
@@ -1537,7 +1547,8 @@ header {
 
 /* -------------------------------------------------------------------Keyframe Animations */
 
-/* Obtained from stackoverflow: https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+/* Obtained from stackoverflow
+(https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load) */
 
 @keyframes fadein {
     from { opacity: 0; }
