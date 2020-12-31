@@ -279,11 +279,7 @@ header {
     width: max-content;
     font-size: 6rem;
     line-height: 10rem;
-    font-weight: bold;
-    background: linear-gradient(to top, rgb(65, 65, 65), rgb(31, 30, 30));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
     position: absolute;
     left: 0;
     right: 0;
@@ -691,10 +687,10 @@ header {
 .skill-header {
     background: rgb(34, 81, 211);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     position: absolute;
     width: 100%;
-    top: -3%;
+    top: -9%;
     z-index: 6;
 }
 
