@@ -1546,7 +1546,7 @@ header {
 
 }
 
-@media screen and (max-width: 1199px), all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (max-width: 1199px), (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .outer-img {
         height: 33.333vh !important;
         width: 100% !important;
