@@ -31,51 +31,48 @@ body::after {
 }
 
 /* -------------------------------------------------------------------Parallax Definitions (learned at keithclark.co.uk)*/
-
-@supports ((perspective: 1px)) {
     
-    .parallax {
-        background: #2c2c2c;
-        perspective: 5px;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        scroll-behavior: smooth;
-        margin-bottom: 6vh;
-    }
+.parallax {
+    background: #2c2c2c;
+    perspective: 5px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    margin-bottom: 6vh;
+}
 
-    .layer-group {
-        position: relative;
-        height: 100vh;
-        transform-style: preserve-3d;
-        pointer-events: none;
-    }
+.layer-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
 
-    .layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
-    .back {
-        transform: translateZ(-1px) scale(1.2);
-        pointer-events: none;
-        z-index: 2;
-    }
+.back {
+    transform: translateZ(-1px) scale(1.2);
+    pointer-events: none;
+    z-index: 2;
+}
 
-    .base {
-        transform: translateZ(0);
-        pointer-events: none;
-        z-index: 3;
-    }
+.base {
+    transform: translateZ(0);
+    pointer-events: none;
+    z-index: 3;
+}
 
-    .backer {
-        transform: translateZ(-3px) scale(1.6);
-        pointer-events: none;
-        z-index: 1;
-    }
+.backer {
+    transform: translateZ(-3px) scale(1.6);
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* -------------------------------------------------------------------Header */
